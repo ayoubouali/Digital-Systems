@@ -1,0 +1,15 @@
+Analysis & Synthesis Status : Successful - Tue Nov 26 11:29:18 2019
+Quartus II Version : 8.1 Build 163 10/28/2008 SJ Web Edition
+Revision Name : knight_top
+Top-level Entity Name : knight_top
+Family : Stratix II
+Logic utilization : N/A
+    Combinational ALUTs : 10
+    Dedicated logic registers : 9
+Total registers : 9
+Total pins : 9
+Total virtual pins : 0
+Total block memory bits : 0
+DSP block 9-bit elements : 0
+Total PLLs : 0
+Total DLLs : 0

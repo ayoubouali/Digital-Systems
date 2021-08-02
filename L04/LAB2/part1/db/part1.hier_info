@@ -1,0 +1,55 @@
+|part1
+a => andgate:unit1.a
+s => andgate:unit3.b
+s => andgate:unit2.b
+s => andgate:unit1.b
+b => andgate:unit2.a
+cin => andgate:unit3.a
+G <= compar:unit4.gr
+E <= compar:unit4.eq
+L <= compar:unit4.sm
+sum <= fa:unit5.sum
+cout <= fa:unit5.c_out
+
+
+|part1|andgate:unit1
+a => c~0.IN0
+b => c~0.IN1
+c <= c~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part1|andgate:unit2
+a => c~0.IN0
+b => c~0.IN1
+c <= c~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part1|andgate:unit3
+a => c~0.IN0
+b => c~0.IN1
+c <= c~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part1|compar:unit4
+c1 => process_0~1.IN0
+c1 => process_0~0.IN0
+c1 => process_0~2.IN0
+c2 => process_0~2.IN1
+c2 => process_0~1.IN1
+c2 => process_0~0.IN1
+gr <= result[2].DB_MAX_OUTPUT_PORT_TYPE
+eq <= result[1].DB_MAX_OUTPUT_PORT_TYPE
+sm <= result[0].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part1|FA:unit5
+c1 => c_out~0.IN0
+c1 => sum~0.IN0
+c2 => c_out~0.IN1
+c2 => sum~0.IN1
+c_in => c_out~1.IN1
+c_in => sum~1.IN1
+sum <= sum~1.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out~2.DB_MAX_OUTPUT_PORT_TYPE
+
+

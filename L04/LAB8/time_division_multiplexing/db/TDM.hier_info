@@ -1,0 +1,11 @@
+|TDM
+clk => state[1].CLK
+f[0] => Mux0.IN3
+f[1] => ~NO_FANOUT~
+f[2] => Mux0.IN1
+f[3] => ~NO_FANOUT~
+q[0] <= <GND>
+q[1] <= state[1].DB_MAX_OUTPUT_PORT_TYPE
+y <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
