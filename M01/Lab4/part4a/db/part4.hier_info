@@ -1,0 +1,135 @@
+|part4
+clk => FSM:F.Clk
+clk => ROM:R1.Clk
+clk => RAM:R2.Clk
+rst => FSM:F.Reset
+dout[0] <= RAM:R2.Dout[0]
+dout[1] <= RAM:R2.Dout[1]
+dout[2] <= RAM:R2.Dout[2]
+dout[3] <= RAM:R2.Dout[3]
+dout[4] <= RAM:R2.Dout[4]
+dout[5] <= RAM:R2.Dout[5]
+dout[6] <= RAM:R2.Dout[6]
+dout[7] <= RAM:R2.Dout[7]
+
+
+|part4|FSM:F
+Clk => PS~10.DATAIN
+Reset => PS~14.DATAIN
+Addr[0] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+Addr[1] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+c_Rom <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+c_Ram <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+c_Read <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part4|ROM:R1
+Clk => Dout[0]~reg0.CLK
+Clk => Dout[0]~en.CLK
+Clk => Dout[1]~reg0.CLK
+Clk => Dout[1]~en.CLK
+Clk => Dout[2]~reg0.CLK
+Clk => Dout[2]~en.CLK
+Clk => Dout[3]~reg0.CLK
+Clk => Dout[3]~en.CLK
+Clk => Dout[4]~reg0.CLK
+Clk => Dout[4]~en.CLK
+Clk => Dout[5]~reg0.CLK
+Clk => Dout[5]~en.CLK
+Clk => Dout[6]~reg0.CLK
+Clk => Dout[6]~en.CLK
+Clk => Dout[7]~reg0.CLK
+Clk => Dout[7]~en.CLK
+RD => Dout[0]~en.DATAIN
+RD => Dout[1]~en.DATAIN
+RD => Dout[2]~en.DATAIN
+RD => Dout[3]~en.DATAIN
+RD => Dout[4]~en.DATAIN
+RD => Dout[5]~en.DATAIN
+RD => Dout[6]~en.DATAIN
+RD => Dout[7]~en.DATAIN
+Addr[0] => Dout[0]~reg0.DATAIN
+Addr[0] => Dout[4]~reg0.DATAIN
+Addr[1] => Dout[1]~reg0.DATAIN
+Addr[1] => Dout[5]~reg0.DATAIN
+Dout[0] <= Dout[0]~0.DB_MAX_OUTPUT_PORT_TYPE
+Dout[1] <= Dout[1]~1.DB_MAX_OUTPUT_PORT_TYPE
+Dout[2] <= Dout[2]~2.DB_MAX_OUTPUT_PORT_TYPE
+Dout[3] <= Dout[3]~3.DB_MAX_OUTPUT_PORT_TYPE
+Dout[4] <= Dout[4]~4.DB_MAX_OUTPUT_PORT_TYPE
+Dout[5] <= Dout[5]~5.DB_MAX_OUTPUT_PORT_TYPE
+Dout[6] <= Dout[6]~6.DB_MAX_OUTPUT_PORT_TYPE
+Dout[7] <= Dout[7]~7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part4|RAM:R2
+Clk => ram~11.CLK
+Clk => ram~1.CLK
+Clk => ram~2.CLK
+Clk => ram~3.CLK
+Clk => ram~4.CLK
+Clk => ram~5.CLK
+Clk => ram~6.CLK
+Clk => ram~7.CLK
+Clk => ram~8.CLK
+Clk => ram~9.CLK
+Clk => ram~10.CLK
+Clk => Dout[0]~reg0.CLK
+Clk => Dout[0]~en.CLK
+Clk => Dout[1]~reg0.CLK
+Clk => Dout[1]~en.CLK
+Clk => Dout[2]~reg0.CLK
+Clk => Dout[2]~en.CLK
+Clk => Dout[3]~reg0.CLK
+Clk => Dout[3]~en.CLK
+Clk => Dout[4]~reg0.CLK
+Clk => Dout[4]~en.CLK
+Clk => Dout[5]~reg0.CLK
+Clk => Dout[5]~en.CLK
+Clk => Dout[6]~reg0.CLK
+Clk => Dout[6]~en.CLK
+Clk => Dout[7]~reg0.CLK
+Clk => Dout[7]~en.CLK
+Clk => ram.CLK0
+RD => ram~0.OUTPUTSELECT
+RD => Dout[0]~en.DATAIN
+RD => Dout[1]~en.DATAIN
+RD => Dout[2]~en.DATAIN
+RD => Dout[3]~en.DATAIN
+RD => Dout[4]~en.DATAIN
+RD => Dout[5]~en.DATAIN
+RD => Dout[6]~en.DATAIN
+RD => Dout[7]~en.DATAIN
+WE => ram~0.DATAA
+Addr[0] => ram~2.DATAIN
+Addr[0] => ram.WADDR
+Addr[0] => ram.RADDR
+Addr[1] => ram~1.DATAIN
+Addr[1] => ram.WADDR1
+Addr[1] => ram.RADDR1
+Din[0] => ram~10.DATAIN
+Din[0] => ram.DATAIN
+Din[1] => ram~9.DATAIN
+Din[1] => ram.DATAIN1
+Din[2] => ram~8.DATAIN
+Din[2] => ram.DATAIN2
+Din[3] => ram~7.DATAIN
+Din[3] => ram.DATAIN3
+Din[4] => ram~6.DATAIN
+Din[4] => ram.DATAIN4
+Din[5] => ram~5.DATAIN
+Din[5] => ram.DATAIN5
+Din[6] => ram~4.DATAIN
+Din[6] => ram.DATAIN6
+Din[7] => ram~3.DATAIN
+Din[7] => ram.DATAIN7
+Dout[0] <= Dout[0]~0.DB_MAX_OUTPUT_PORT_TYPE
+Dout[1] <= Dout[1]~1.DB_MAX_OUTPUT_PORT_TYPE
+Dout[2] <= Dout[2]~2.DB_MAX_OUTPUT_PORT_TYPE
+Dout[3] <= Dout[3]~3.DB_MAX_OUTPUT_PORT_TYPE
+Dout[4] <= Dout[4]~4.DB_MAX_OUTPUT_PORT_TYPE
+Dout[5] <= Dout[5]~5.DB_MAX_OUTPUT_PORT_TYPE
+Dout[6] <= Dout[6]~6.DB_MAX_OUTPUT_PORT_TYPE
+Dout[7] <= Dout[7]~7.DB_MAX_OUTPUT_PORT_TYPE
+
+

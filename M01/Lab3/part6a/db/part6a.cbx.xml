@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="part6a">
+		<CBX_INST_ENTRY INSTANCE_NAME="|part6a|lpm_mux:my_rom_rtl_1" CBX_FILE_NAME="mux_joc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|part6a|lpm_mux:my_rom_rtl_3" CBX_FILE_NAME="mux_joc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|part6a|lpm_mux:my_rom_rtl_5" CBX_FILE_NAME="mux_joc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|part6a|lpm_mux:my_rom_rtl_0" CBX_FILE_NAME="mux_joc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|part6a|lpm_mux:my_rom_rtl_2" CBX_FILE_NAME="mux_joc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|part6a|lpm_mux:my_rom_rtl_4" CBX_FILE_NAME="mux_joc.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

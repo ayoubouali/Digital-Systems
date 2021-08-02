@@ -1,0 +1,29 @@
+|part3
+CS => ram.we_a.OUTPUTSELECT
+CS => data_out[0]$latch.ACLR
+CS => data_out[0]_59.ACLR
+CS => data_out[1]$latch.ACLR
+CS => data_out[2]$latch.ACLR
+CS => data_out[3]$latch.ACLR
+RW => data_out[0]_59.DATAIN
+RW => ram.we_a.DATAA
+addr[0] => ram.RADDR
+addr[0] => ram.WADDR
+addr[1] => ram.RADDR1
+addr[1] => ram.WADDR1
+addr[2] => ram.RADDR2
+addr[2] => ram.WADDR2
+addr[3] => ram.RADDR3
+addr[3] => ram.WADDR3
+addr[4] => ram.RADDR4
+addr[4] => ram.WADDR4
+data_in[0] => ram.DATAIN
+data_in[1] => ram.DATAIN1
+data_in[2] => ram.DATAIN2
+data_in[3] => ram.DATAIN3
+data_out[0] <= data_out[0]~0.DB_MAX_OUTPUT_PORT_TYPE
+data_out[1] <= data_out[1]~1.DB_MAX_OUTPUT_PORT_TYPE
+data_out[2] <= data_out[2]~2.DB_MAX_OUTPUT_PORT_TYPE
+data_out[3] <= data_out[3]~3.DB_MAX_OUTPUT_PORT_TYPE
+
+

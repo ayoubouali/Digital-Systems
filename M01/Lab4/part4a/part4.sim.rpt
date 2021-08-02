@@ -1,0 +1,528 @@
+Simulator report for part4
+Sun Feb 09 16:43:48 2020
+Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 319 nodes    ;
+; Simulation Coverage         ;      61.76 % ;
+; Total Number of Transitions ; 2934         ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Functional ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      61.76 % ;
+; Total nodes checked                                 ; 319          ;
+; Total output ports checked                          ; 319          ;
+; Total output ports with complete 1/0-value coverage ; 197          ;
+; Total output ports with no 1/0-value coverage       ; 49           ;
+; Total output ports with no 1-value coverage         ; 70           ;
+; Total output ports with no 0-value coverage         ; 101          ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                                                          ;
++-------------------------------------------------------------------------+-------------------------------------------------------------------------+------------------+
+; Node Name                                                               ; Output Port Name                                                        ; Output Port Type ;
++-------------------------------------------------------------------------+-------------------------------------------------------------------------+------------------+
+; |part4|clk                                                              ; |part4|clk                                                              ; out              ;
+; |part4|dout[0]                                                          ; |part4|dout[0]                                                          ; pin_out          ;
+; |part4|dout[1]                                                          ; |part4|dout[1]                                                          ; pin_out          ;
+; |part4|dout[4]                                                          ; |part4|dout[4]                                                          ; pin_out          ;
+; |part4|dout[5]                                                          ; |part4|dout[5]                                                          ; pin_out          ;
+; |part4|RAM:R2|Dout[5]~reg0                                              ; |part4|RAM:R2|Dout[5]~reg0                                              ; regout           ;
+; |part4|RAM:R2|Dout[4]~reg0                                              ; |part4|RAM:R2|Dout[4]~reg0                                              ; regout           ;
+; |part4|RAM:R2|Dout[1]~reg0                                              ; |part4|RAM:R2|Dout[1]~reg0                                              ; regout           ;
+; |part4|RAM:R2|Dout[0]~reg0                                              ; |part4|RAM:R2|Dout[0]~reg0                                              ; regout           ;
+; |part4|RAM:R2|Dout[0]                                                   ; |part4|RAM:R2|Dout[0]                                                   ; out              ;
+; |part4|RAM:R2|Dout[1]                                                   ; |part4|RAM:R2|Dout[1]                                                   ; out              ;
+; |part4|RAM:R2|Dout[4]                                                   ; |part4|RAM:R2|Dout[4]                                                   ; out              ;
+; |part4|RAM:R2|Dout[5]                                                   ; |part4|RAM:R2|Dout[5]                                                   ; out              ;
+; |part4|ROM:R1|Dout[5]~reg0                                              ; |part4|ROM:R1|Dout[5]~reg0                                              ; regout           ;
+; |part4|ROM:R1|Dout[4]~reg0                                              ; |part4|ROM:R1|Dout[4]~reg0                                              ; regout           ;
+; |part4|ROM:R1|Dout[1]~reg0                                              ; |part4|ROM:R1|Dout[1]~reg0                                              ; regout           ;
+; |part4|ROM:R1|Dout[0]~reg0                                              ; |part4|ROM:R1|Dout[0]~reg0                                              ; regout           ;
+; |part4|ROM:R1|Dout[0]~en                                                ; |part4|ROM:R1|Dout[0]~en                                                ; regout           ;
+; |part4|ROM:R1|Dout[0]                                                   ; |part4|ROM:R1|Dout[0]                                                   ; out              ;
+; |part4|ROM:R1|Dout[1]~en                                                ; |part4|ROM:R1|Dout[1]~en                                                ; regout           ;
+; |part4|ROM:R1|Dout[1]                                                   ; |part4|ROM:R1|Dout[1]                                                   ; out              ;
+; |part4|ROM:R1|Dout[2]~en                                                ; |part4|ROM:R1|Dout[2]~en                                                ; regout           ;
+; |part4|ROM:R1|Dout[3]~en                                                ; |part4|ROM:R1|Dout[3]~en                                                ; regout           ;
+; |part4|ROM:R1|Dout[4]~en                                                ; |part4|ROM:R1|Dout[4]~en                                                ; regout           ;
+; |part4|ROM:R1|Dout[4]                                                   ; |part4|ROM:R1|Dout[4]                                                   ; out              ;
+; |part4|ROM:R1|Dout[5]~en                                                ; |part4|ROM:R1|Dout[5]~en                                                ; regout           ;
+; |part4|ROM:R1|Dout[5]                                                   ; |part4|ROM:R1|Dout[5]                                                   ; out              ;
+; |part4|ROM:R1|Dout[6]~en                                                ; |part4|ROM:R1|Dout[6]~en                                                ; regout           ;
+; |part4|ROM:R1|Dout[7]~en                                                ; |part4|ROM:R1|Dout[7]~en                                                ; regout           ;
+; |part4|FSM:F|PS~0                                                       ; |part4|FSM:F|PS~0                                                       ; out0             ;
+; |part4|FSM:F|PS.S2                                                      ; |part4|FSM:F|PS.S2                                                      ; regout           ;
+; |part4|FSM:F|PS.S3                                                      ; |part4|FSM:F|PS.S3                                                      ; regout           ;
+; |part4|FSM:F|PS.S4                                                      ; |part4|FSM:F|PS.S4                                                      ; regout           ;
+; |part4|FSM:F|PS.S5                                                      ; |part4|FSM:F|PS.S5                                                      ; regout           ;
+; |part4|FSM:F|PS.S6                                                      ; |part4|FSM:F|PS.S6                                                      ; regout           ;
+; |part4|FSM:F|PS.S7                                                      ; |part4|FSM:F|PS.S7                                                      ; regout           ;
+; |part4|FSM:F|WideOr0                                                    ; |part4|FSM:F|WideOr0                                                    ; out0             ;
+; |part4|FSM:F|WideOr1                                                    ; |part4|FSM:F|WideOr1                                                    ; out0             ;
+; |part4|FSM:F|PS.S8                                                      ; |part4|FSM:F|PS.S8                                                      ; regout           ;
+; |part4|FSM:F|PS~1                                                       ; |part4|FSM:F|PS~1                                                       ; out0             ;
+; |part4|FSM:F|WideOr0~1                                                  ; |part4|FSM:F|WideOr0~1                                                  ; out0             ;
+; |part4|FSM:F|WideOr1~0                                                  ; |part4|FSM:F|WideOr1~0                                                  ; out0             ;
+; |part4|FSM:F|PS~4                                                       ; |part4|FSM:F|PS~4                                                       ; out0             ;
+; |part4|FSM:F|WideOr0~2                                                  ; |part4|FSM:F|WideOr0~2                                                  ; out0             ;
+; |part4|FSM:F|WideOr0~3                                                  ; |part4|FSM:F|WideOr0~3                                                  ; out0             ;
+; |part4|FSM:F|WideOr1~1                                                  ; |part4|FSM:F|WideOr1~1                                                  ; out0             ;
+; |part4|FSM:F|PS~6                                                       ; |part4|FSM:F|PS~6                                                       ; out0             ;
+; |part4|FSM:F|PS~10                                                      ; |part4|FSM:F|PS~10                                                      ; out0             ;
+; |part4|rtl~1                                                            ; |part4|rtl~1                                                            ; out0             ;
+; |part4|rtl~2                                                            ; |part4|rtl~2                                                            ; out0             ;
+; |part4|rtl~3                                                            ; |part4|rtl~3                                                            ; out0             ;
+; |part4|RAM:R2|ram~68                                                    ; |part4|RAM:R2|ram~68                                                    ; out              ;
+; |part4|RAM:R2|ram~72                                                    ; |part4|RAM:R2|ram~72                                                    ; out              ;
+; |part4|RAM:R2|ram~84                                                    ; |part4|RAM:R2|ram~84                                                    ; out0             ;
+; |part4|RAM:R2|ram~85                                                    ; |part4|RAM:R2|ram~85                                                    ; out0             ;
+; |part4|RAM:R2|ram~86                                                    ; |part4|RAM:R2|ram~86                                                    ; out0             ;
+; |part4|RAM:R2|ram~87                                                    ; |part4|RAM:R2|ram~87                                                    ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_7|mux_umc:auto_generated|_~0              ; |part4|RAM:R2|lpm_mux:ram_rtl_7|mux_umc:auto_generated|_~0              ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_7|mux_umc:auto_generated|_~1              ; |part4|RAM:R2|lpm_mux:ram_rtl_7|mux_umc:auto_generated|_~1              ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_7|mux_umc:auto_generated|_~2              ; |part4|RAM:R2|lpm_mux:ram_rtl_7|mux_umc:auto_generated|_~2              ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_7|mux_umc:auto_generated|_~3              ; |part4|RAM:R2|lpm_mux:ram_rtl_7|mux_umc:auto_generated|_~3              ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_7|mux_umc:auto_generated|_~4              ; |part4|RAM:R2|lpm_mux:ram_rtl_7|mux_umc:auto_generated|_~4              ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_7|mux_umc:auto_generated|_~5              ; |part4|RAM:R2|lpm_mux:ram_rtl_7|mux_umc:auto_generated|_~5              ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_7|mux_umc:auto_generated|_~6              ; |part4|RAM:R2|lpm_mux:ram_rtl_7|mux_umc:auto_generated|_~6              ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_7|mux_umc:auto_generated|_~7              ; |part4|RAM:R2|lpm_mux:ram_rtl_7|mux_umc:auto_generated|_~7              ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_7|mux_umc:auto_generated|_~8              ; |part4|RAM:R2|lpm_mux:ram_rtl_7|mux_umc:auto_generated|_~8              ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_7|mux_umc:auto_generated|result_node[0]~0 ; |part4|RAM:R2|lpm_mux:ram_rtl_7|mux_umc:auto_generated|result_node[0]~0 ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_7|mux_umc:auto_generated|_~9              ; |part4|RAM:R2|lpm_mux:ram_rtl_7|mux_umc:auto_generated|_~9              ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_7|mux_umc:auto_generated|_~10             ; |part4|RAM:R2|lpm_mux:ram_rtl_7|mux_umc:auto_generated|_~10             ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_7|mux_umc:auto_generated|_~11             ; |part4|RAM:R2|lpm_mux:ram_rtl_7|mux_umc:auto_generated|_~11             ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_7|mux_umc:auto_generated|_~12             ; |part4|RAM:R2|lpm_mux:ram_rtl_7|mux_umc:auto_generated|_~12             ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_7|mux_umc:auto_generated|_~13             ; |part4|RAM:R2|lpm_mux:ram_rtl_7|mux_umc:auto_generated|_~13             ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_7|mux_umc:auto_generated|_~14             ; |part4|RAM:R2|lpm_mux:ram_rtl_7|mux_umc:auto_generated|_~14             ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_7|mux_umc:auto_generated|_~15             ; |part4|RAM:R2|lpm_mux:ram_rtl_7|mux_umc:auto_generated|_~15             ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_7|mux_umc:auto_generated|_~16             ; |part4|RAM:R2|lpm_mux:ram_rtl_7|mux_umc:auto_generated|_~16             ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_7|mux_umc:auto_generated|result_node[0]~1 ; |part4|RAM:R2|lpm_mux:ram_rtl_7|mux_umc:auto_generated|result_node[0]~1 ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_7|mux_umc:auto_generated|result_node[0]   ; |part4|RAM:R2|lpm_mux:ram_rtl_7|mux_umc:auto_generated|result_node[0]   ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_6|mux_umc:auto_generated|_~0              ; |part4|RAM:R2|lpm_mux:ram_rtl_6|mux_umc:auto_generated|_~0              ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_6|mux_umc:auto_generated|_~1              ; |part4|RAM:R2|lpm_mux:ram_rtl_6|mux_umc:auto_generated|_~1              ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_6|mux_umc:auto_generated|_~2              ; |part4|RAM:R2|lpm_mux:ram_rtl_6|mux_umc:auto_generated|_~2              ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_6|mux_umc:auto_generated|_~3              ; |part4|RAM:R2|lpm_mux:ram_rtl_6|mux_umc:auto_generated|_~3              ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_6|mux_umc:auto_generated|_~4              ; |part4|RAM:R2|lpm_mux:ram_rtl_6|mux_umc:auto_generated|_~4              ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_6|mux_umc:auto_generated|_~5              ; |part4|RAM:R2|lpm_mux:ram_rtl_6|mux_umc:auto_generated|_~5              ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_6|mux_umc:auto_generated|_~6              ; |part4|RAM:R2|lpm_mux:ram_rtl_6|mux_umc:auto_generated|_~6              ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_6|mux_umc:auto_generated|_~7              ; |part4|RAM:R2|lpm_mux:ram_rtl_6|mux_umc:auto_generated|_~7              ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_6|mux_umc:auto_generated|_~8              ; |part4|RAM:R2|lpm_mux:ram_rtl_6|mux_umc:auto_generated|_~8              ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_6|mux_umc:auto_generated|result_node[0]~0 ; |part4|RAM:R2|lpm_mux:ram_rtl_6|mux_umc:auto_generated|result_node[0]~0 ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_6|mux_umc:auto_generated|_~9              ; |part4|RAM:R2|lpm_mux:ram_rtl_6|mux_umc:auto_generated|_~9              ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_6|mux_umc:auto_generated|_~10             ; |part4|RAM:R2|lpm_mux:ram_rtl_6|mux_umc:auto_generated|_~10             ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_6|mux_umc:auto_generated|_~11             ; |part4|RAM:R2|lpm_mux:ram_rtl_6|mux_umc:auto_generated|_~11             ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_6|mux_umc:auto_generated|_~12             ; |part4|RAM:R2|lpm_mux:ram_rtl_6|mux_umc:auto_generated|_~12             ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_6|mux_umc:auto_generated|_~13             ; |part4|RAM:R2|lpm_mux:ram_rtl_6|mux_umc:auto_generated|_~13             ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_6|mux_umc:auto_generated|_~14             ; |part4|RAM:R2|lpm_mux:ram_rtl_6|mux_umc:auto_generated|_~14             ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_6|mux_umc:auto_generated|_~15             ; |part4|RAM:R2|lpm_mux:ram_rtl_6|mux_umc:auto_generated|_~15             ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_6|mux_umc:auto_generated|_~16             ; |part4|RAM:R2|lpm_mux:ram_rtl_6|mux_umc:auto_generated|_~16             ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_6|mux_umc:auto_generated|result_node[0]~1 ; |part4|RAM:R2|lpm_mux:ram_rtl_6|mux_umc:auto_generated|result_node[0]~1 ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_6|mux_umc:auto_generated|result_node[0]   ; |part4|RAM:R2|lpm_mux:ram_rtl_6|mux_umc:auto_generated|result_node[0]   ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_5|mux_umc:auto_generated|_~0              ; |part4|RAM:R2|lpm_mux:ram_rtl_5|mux_umc:auto_generated|_~0              ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_5|mux_umc:auto_generated|_~1              ; |part4|RAM:R2|lpm_mux:ram_rtl_5|mux_umc:auto_generated|_~1              ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_5|mux_umc:auto_generated|_~2              ; |part4|RAM:R2|lpm_mux:ram_rtl_5|mux_umc:auto_generated|_~2              ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_5|mux_umc:auto_generated|_~3              ; |part4|RAM:R2|lpm_mux:ram_rtl_5|mux_umc:auto_generated|_~3              ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_5|mux_umc:auto_generated|_~4              ; |part4|RAM:R2|lpm_mux:ram_rtl_5|mux_umc:auto_generated|_~4              ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_5|mux_umc:auto_generated|_~5              ; |part4|RAM:R2|lpm_mux:ram_rtl_5|mux_umc:auto_generated|_~5              ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_5|mux_umc:auto_generated|_~6              ; |part4|RAM:R2|lpm_mux:ram_rtl_5|mux_umc:auto_generated|_~6              ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_5|mux_umc:auto_generated|_~7              ; |part4|RAM:R2|lpm_mux:ram_rtl_5|mux_umc:auto_generated|_~7              ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_5|mux_umc:auto_generated|_~8              ; |part4|RAM:R2|lpm_mux:ram_rtl_5|mux_umc:auto_generated|_~8              ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_5|mux_umc:auto_generated|result_node[0]~0 ; |part4|RAM:R2|lpm_mux:ram_rtl_5|mux_umc:auto_generated|result_node[0]~0 ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_5|mux_umc:auto_generated|_~9              ; |part4|RAM:R2|lpm_mux:ram_rtl_5|mux_umc:auto_generated|_~9              ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_5|mux_umc:auto_generated|_~10             ; |part4|RAM:R2|lpm_mux:ram_rtl_5|mux_umc:auto_generated|_~10             ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_5|mux_umc:auto_generated|_~11             ; |part4|RAM:R2|lpm_mux:ram_rtl_5|mux_umc:auto_generated|_~11             ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_5|mux_umc:auto_generated|_~12             ; |part4|RAM:R2|lpm_mux:ram_rtl_5|mux_umc:auto_generated|_~12             ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_5|mux_umc:auto_generated|_~13             ; |part4|RAM:R2|lpm_mux:ram_rtl_5|mux_umc:auto_generated|_~13             ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_5|mux_umc:auto_generated|_~14             ; |part4|RAM:R2|lpm_mux:ram_rtl_5|mux_umc:auto_generated|_~14             ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_5|mux_umc:auto_generated|_~15             ; |part4|RAM:R2|lpm_mux:ram_rtl_5|mux_umc:auto_generated|_~15             ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_5|mux_umc:auto_generated|_~16             ; |part4|RAM:R2|lpm_mux:ram_rtl_5|mux_umc:auto_generated|_~16             ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_5|mux_umc:auto_generated|result_node[0]~1 ; |part4|RAM:R2|lpm_mux:ram_rtl_5|mux_umc:auto_generated|result_node[0]~1 ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_5|mux_umc:auto_generated|result_node[0]   ; |part4|RAM:R2|lpm_mux:ram_rtl_5|mux_umc:auto_generated|result_node[0]   ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_4|mux_umc:auto_generated|_~1              ; |part4|RAM:R2|lpm_mux:ram_rtl_4|mux_umc:auto_generated|_~1              ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_4|mux_umc:auto_generated|_~2              ; |part4|RAM:R2|lpm_mux:ram_rtl_4|mux_umc:auto_generated|_~2              ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_4|mux_umc:auto_generated|_~3              ; |part4|RAM:R2|lpm_mux:ram_rtl_4|mux_umc:auto_generated|_~3              ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_4|mux_umc:auto_generated|_~4              ; |part4|RAM:R2|lpm_mux:ram_rtl_4|mux_umc:auto_generated|_~4              ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_4|mux_umc:auto_generated|_~5              ; |part4|RAM:R2|lpm_mux:ram_rtl_4|mux_umc:auto_generated|_~5              ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_4|mux_umc:auto_generated|_~6              ; |part4|RAM:R2|lpm_mux:ram_rtl_4|mux_umc:auto_generated|_~6              ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_4|mux_umc:auto_generated|_~7              ; |part4|RAM:R2|lpm_mux:ram_rtl_4|mux_umc:auto_generated|_~7              ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_4|mux_umc:auto_generated|_~8              ; |part4|RAM:R2|lpm_mux:ram_rtl_4|mux_umc:auto_generated|_~8              ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_4|mux_umc:auto_generated|_~9              ; |part4|RAM:R2|lpm_mux:ram_rtl_4|mux_umc:auto_generated|_~9              ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_4|mux_umc:auto_generated|_~10             ; |part4|RAM:R2|lpm_mux:ram_rtl_4|mux_umc:auto_generated|_~10             ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_4|mux_umc:auto_generated|_~11             ; |part4|RAM:R2|lpm_mux:ram_rtl_4|mux_umc:auto_generated|_~11             ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_4|mux_umc:auto_generated|_~12             ; |part4|RAM:R2|lpm_mux:ram_rtl_4|mux_umc:auto_generated|_~12             ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_4|mux_umc:auto_generated|_~13             ; |part4|RAM:R2|lpm_mux:ram_rtl_4|mux_umc:auto_generated|_~13             ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_4|mux_umc:auto_generated|_~14             ; |part4|RAM:R2|lpm_mux:ram_rtl_4|mux_umc:auto_generated|_~14             ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_4|mux_umc:auto_generated|_~15             ; |part4|RAM:R2|lpm_mux:ram_rtl_4|mux_umc:auto_generated|_~15             ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_4|mux_umc:auto_generated|_~16             ; |part4|RAM:R2|lpm_mux:ram_rtl_4|mux_umc:auto_generated|_~16             ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_4|mux_umc:auto_generated|result_node[0]~1 ; |part4|RAM:R2|lpm_mux:ram_rtl_4|mux_umc:auto_generated|result_node[0]~1 ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_4|mux_umc:auto_generated|result_node[0]   ; |part4|RAM:R2|lpm_mux:ram_rtl_4|mux_umc:auto_generated|result_node[0]   ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_3|mux_umc:auto_generated|_~1              ; |part4|RAM:R2|lpm_mux:ram_rtl_3|mux_umc:auto_generated|_~1              ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_3|mux_umc:auto_generated|_~3              ; |part4|RAM:R2|lpm_mux:ram_rtl_3|mux_umc:auto_generated|_~3              ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_3|mux_umc:auto_generated|_~5              ; |part4|RAM:R2|lpm_mux:ram_rtl_3|mux_umc:auto_generated|_~5              ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_3|mux_umc:auto_generated|_~6              ; |part4|RAM:R2|lpm_mux:ram_rtl_3|mux_umc:auto_generated|_~6              ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_3|mux_umc:auto_generated|_~7              ; |part4|RAM:R2|lpm_mux:ram_rtl_3|mux_umc:auto_generated|_~7              ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_3|mux_umc:auto_generated|_~8              ; |part4|RAM:R2|lpm_mux:ram_rtl_3|mux_umc:auto_generated|_~8              ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_3|mux_umc:auto_generated|_~9              ; |part4|RAM:R2|lpm_mux:ram_rtl_3|mux_umc:auto_generated|_~9              ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_3|mux_umc:auto_generated|_~11             ; |part4|RAM:R2|lpm_mux:ram_rtl_3|mux_umc:auto_generated|_~11             ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_3|mux_umc:auto_generated|_~13             ; |part4|RAM:R2|lpm_mux:ram_rtl_3|mux_umc:auto_generated|_~13             ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_3|mux_umc:auto_generated|_~14             ; |part4|RAM:R2|lpm_mux:ram_rtl_3|mux_umc:auto_generated|_~14             ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_3|mux_umc:auto_generated|_~15             ; |part4|RAM:R2|lpm_mux:ram_rtl_3|mux_umc:auto_generated|_~15             ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_3|mux_umc:auto_generated|_~16             ; |part4|RAM:R2|lpm_mux:ram_rtl_3|mux_umc:auto_generated|_~16             ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_2|mux_umc:auto_generated|_~1              ; |part4|RAM:R2|lpm_mux:ram_rtl_2|mux_umc:auto_generated|_~1              ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_2|mux_umc:auto_generated|_~3              ; |part4|RAM:R2|lpm_mux:ram_rtl_2|mux_umc:auto_generated|_~3              ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_2|mux_umc:auto_generated|_~5              ; |part4|RAM:R2|lpm_mux:ram_rtl_2|mux_umc:auto_generated|_~5              ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_2|mux_umc:auto_generated|_~6              ; |part4|RAM:R2|lpm_mux:ram_rtl_2|mux_umc:auto_generated|_~6              ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_2|mux_umc:auto_generated|_~7              ; |part4|RAM:R2|lpm_mux:ram_rtl_2|mux_umc:auto_generated|_~7              ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_2|mux_umc:auto_generated|_~8              ; |part4|RAM:R2|lpm_mux:ram_rtl_2|mux_umc:auto_generated|_~8              ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_2|mux_umc:auto_generated|_~9              ; |part4|RAM:R2|lpm_mux:ram_rtl_2|mux_umc:auto_generated|_~9              ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_2|mux_umc:auto_generated|_~11             ; |part4|RAM:R2|lpm_mux:ram_rtl_2|mux_umc:auto_generated|_~11             ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_2|mux_umc:auto_generated|_~13             ; |part4|RAM:R2|lpm_mux:ram_rtl_2|mux_umc:auto_generated|_~13             ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_2|mux_umc:auto_generated|_~14             ; |part4|RAM:R2|lpm_mux:ram_rtl_2|mux_umc:auto_generated|_~14             ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_2|mux_umc:auto_generated|_~15             ; |part4|RAM:R2|lpm_mux:ram_rtl_2|mux_umc:auto_generated|_~15             ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_2|mux_umc:auto_generated|_~16             ; |part4|RAM:R2|lpm_mux:ram_rtl_2|mux_umc:auto_generated|_~16             ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_1|mux_umc:auto_generated|_~0              ; |part4|RAM:R2|lpm_mux:ram_rtl_1|mux_umc:auto_generated|_~0              ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_1|mux_umc:auto_generated|_~1              ; |part4|RAM:R2|lpm_mux:ram_rtl_1|mux_umc:auto_generated|_~1              ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_1|mux_umc:auto_generated|_~2              ; |part4|RAM:R2|lpm_mux:ram_rtl_1|mux_umc:auto_generated|_~2              ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_1|mux_umc:auto_generated|_~3              ; |part4|RAM:R2|lpm_mux:ram_rtl_1|mux_umc:auto_generated|_~3              ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_1|mux_umc:auto_generated|_~4              ; |part4|RAM:R2|lpm_mux:ram_rtl_1|mux_umc:auto_generated|_~4              ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_1|mux_umc:auto_generated|_~5              ; |part4|RAM:R2|lpm_mux:ram_rtl_1|mux_umc:auto_generated|_~5              ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_1|mux_umc:auto_generated|_~6              ; |part4|RAM:R2|lpm_mux:ram_rtl_1|mux_umc:auto_generated|_~6              ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_1|mux_umc:auto_generated|_~7              ; |part4|RAM:R2|lpm_mux:ram_rtl_1|mux_umc:auto_generated|_~7              ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_1|mux_umc:auto_generated|_~8              ; |part4|RAM:R2|lpm_mux:ram_rtl_1|mux_umc:auto_generated|_~8              ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_1|mux_umc:auto_generated|result_node[0]~0 ; |part4|RAM:R2|lpm_mux:ram_rtl_1|mux_umc:auto_generated|result_node[0]~0 ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_1|mux_umc:auto_generated|_~9              ; |part4|RAM:R2|lpm_mux:ram_rtl_1|mux_umc:auto_generated|_~9              ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_1|mux_umc:auto_generated|_~10             ; |part4|RAM:R2|lpm_mux:ram_rtl_1|mux_umc:auto_generated|_~10             ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_1|mux_umc:auto_generated|_~11             ; |part4|RAM:R2|lpm_mux:ram_rtl_1|mux_umc:auto_generated|_~11             ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_1|mux_umc:auto_generated|_~12             ; |part4|RAM:R2|lpm_mux:ram_rtl_1|mux_umc:auto_generated|_~12             ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_1|mux_umc:auto_generated|_~13             ; |part4|RAM:R2|lpm_mux:ram_rtl_1|mux_umc:auto_generated|_~13             ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_1|mux_umc:auto_generated|_~14             ; |part4|RAM:R2|lpm_mux:ram_rtl_1|mux_umc:auto_generated|_~14             ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_1|mux_umc:auto_generated|_~15             ; |part4|RAM:R2|lpm_mux:ram_rtl_1|mux_umc:auto_generated|_~15             ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_1|mux_umc:auto_generated|_~16             ; |part4|RAM:R2|lpm_mux:ram_rtl_1|mux_umc:auto_generated|_~16             ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_1|mux_umc:auto_generated|result_node[0]~1 ; |part4|RAM:R2|lpm_mux:ram_rtl_1|mux_umc:auto_generated|result_node[0]~1 ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_1|mux_umc:auto_generated|result_node[0]   ; |part4|RAM:R2|lpm_mux:ram_rtl_1|mux_umc:auto_generated|result_node[0]   ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_0|mux_umc:auto_generated|_~1              ; |part4|RAM:R2|lpm_mux:ram_rtl_0|mux_umc:auto_generated|_~1              ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_0|mux_umc:auto_generated|_~2              ; |part4|RAM:R2|lpm_mux:ram_rtl_0|mux_umc:auto_generated|_~2              ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_0|mux_umc:auto_generated|_~3              ; |part4|RAM:R2|lpm_mux:ram_rtl_0|mux_umc:auto_generated|_~3              ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_0|mux_umc:auto_generated|_~4              ; |part4|RAM:R2|lpm_mux:ram_rtl_0|mux_umc:auto_generated|_~4              ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_0|mux_umc:auto_generated|_~5              ; |part4|RAM:R2|lpm_mux:ram_rtl_0|mux_umc:auto_generated|_~5              ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_0|mux_umc:auto_generated|_~6              ; |part4|RAM:R2|lpm_mux:ram_rtl_0|mux_umc:auto_generated|_~6              ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_0|mux_umc:auto_generated|_~7              ; |part4|RAM:R2|lpm_mux:ram_rtl_0|mux_umc:auto_generated|_~7              ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_0|mux_umc:auto_generated|_~8              ; |part4|RAM:R2|lpm_mux:ram_rtl_0|mux_umc:auto_generated|_~8              ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_0|mux_umc:auto_generated|_~9              ; |part4|RAM:R2|lpm_mux:ram_rtl_0|mux_umc:auto_generated|_~9              ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_0|mux_umc:auto_generated|_~10             ; |part4|RAM:R2|lpm_mux:ram_rtl_0|mux_umc:auto_generated|_~10             ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_0|mux_umc:auto_generated|_~11             ; |part4|RAM:R2|lpm_mux:ram_rtl_0|mux_umc:auto_generated|_~11             ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_0|mux_umc:auto_generated|_~12             ; |part4|RAM:R2|lpm_mux:ram_rtl_0|mux_umc:auto_generated|_~12             ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_0|mux_umc:auto_generated|_~13             ; |part4|RAM:R2|lpm_mux:ram_rtl_0|mux_umc:auto_generated|_~13             ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_0|mux_umc:auto_generated|_~14             ; |part4|RAM:R2|lpm_mux:ram_rtl_0|mux_umc:auto_generated|_~14             ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_0|mux_umc:auto_generated|_~15             ; |part4|RAM:R2|lpm_mux:ram_rtl_0|mux_umc:auto_generated|_~15             ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_0|mux_umc:auto_generated|_~16             ; |part4|RAM:R2|lpm_mux:ram_rtl_0|mux_umc:auto_generated|_~16             ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_0|mux_umc:auto_generated|result_node[0]~1 ; |part4|RAM:R2|lpm_mux:ram_rtl_0|mux_umc:auto_generated|result_node[0]~1 ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_0|mux_umc:auto_generated|result_node[0]   ; |part4|RAM:R2|lpm_mux:ram_rtl_0|mux_umc:auto_generated|result_node[0]   ; out0             ;
++-------------------------------------------------------------------------+-------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                                                                             ;
++-------------------------------------------------------------------------+-------------------------------------------------------------------------+------------------+
+; Node Name                                                               ; Output Port Name                                                        ; Output Port Type ;
++-------------------------------------------------------------------------+-------------------------------------------------------------------------+------------------+
+; |part4|rst                                                              ; |part4|rst                                                              ; out              ;
+; |part4|dout[2]                                                          ; |part4|dout[2]                                                          ; pin_out          ;
+; |part4|dout[3]                                                          ; |part4|dout[3]                                                          ; pin_out          ;
+; |part4|RAM:R2|Dout[3]~reg0                                              ; |part4|RAM:R2|Dout[3]~reg0                                              ; regout           ;
+; |part4|RAM:R2|Dout[2]~reg0                                              ; |part4|RAM:R2|Dout[2]~reg0                                              ; regout           ;
+; |part4|RAM:R2|Dout[2]                                                   ; |part4|RAM:R2|Dout[2]                                                   ; out              ;
+; |part4|RAM:R2|Dout[3]                                                   ; |part4|RAM:R2|Dout[3]                                                   ; out              ;
+; |part4|ROM:R1|Dout[2]                                                   ; |part4|ROM:R1|Dout[2]                                                   ; out              ;
+; |part4|ROM:R1|Dout[3]                                                   ; |part4|ROM:R1|Dout[3]                                                   ; out              ;
+; |part4|FSM:F|PS.S1                                                      ; |part4|FSM:F|PS.S1                                                      ; regout           ;
+; |part4|FSM:F|WideOr2                                                    ; |part4|FSM:F|WideOr2                                                    ; out0             ;
+; |part4|FSM:F|WideOr3                                                    ; |part4|FSM:F|WideOr3                                                    ; out0             ;
+; |part4|FSM:F|PS~2                                                       ; |part4|FSM:F|PS~2                                                       ; out0             ;
+; |part4|FSM:F|WideOr0~0                                                  ; |part4|FSM:F|WideOr0~0                                                  ; out0             ;
+; |part4|FSM:F|PS~14                                                      ; |part4|FSM:F|PS~14                                                      ; out0             ;
+; |part4|rtl~0                                                            ; |part4|rtl~0                                                            ; out0             ;
+; |part4|RAM:R2|ram~12                                                    ; |part4|RAM:R2|ram~12                                                    ; regout           ;
+; |part4|RAM:R2|ram~52                                                    ; |part4|RAM:R2|ram~52                                                    ; out              ;
+; |part4|RAM:R2|ram~13                                                    ; |part4|RAM:R2|ram~13                                                    ; regout           ;
+; |part4|RAM:R2|ram~53                                                    ; |part4|RAM:R2|ram~53                                                    ; out              ;
+; |part4|RAM:R2|ram~14                                                    ; |part4|RAM:R2|ram~14                                                    ; regout           ;
+; |part4|RAM:R2|ram~54                                                    ; |part4|RAM:R2|ram~54                                                    ; out              ;
+; |part4|RAM:R2|ram~15                                                    ; |part4|RAM:R2|ram~15                                                    ; regout           ;
+; |part4|RAM:R2|ram~55                                                    ; |part4|RAM:R2|ram~55                                                    ; out              ;
+; |part4|RAM:R2|ram~16                                                    ; |part4|RAM:R2|ram~16                                                    ; regout           ;
+; |part4|RAM:R2|ram~56                                                    ; |part4|RAM:R2|ram~56                                                    ; out              ;
+; |part4|RAM:R2|ram~17                                                    ; |part4|RAM:R2|ram~17                                                    ; regout           ;
+; |part4|RAM:R2|ram~57                                                    ; |part4|RAM:R2|ram~57                                                    ; out              ;
+; |part4|RAM:R2|ram~18                                                    ; |part4|RAM:R2|ram~18                                                    ; regout           ;
+; |part4|RAM:R2|ram~58                                                    ; |part4|RAM:R2|ram~58                                                    ; out              ;
+; |part4|RAM:R2|ram~19                                                    ; |part4|RAM:R2|ram~19                                                    ; regout           ;
+; |part4|RAM:R2|ram~59                                                    ; |part4|RAM:R2|ram~59                                                    ; out              ;
+; |part4|RAM:R2|ram~21                                                    ; |part4|RAM:R2|ram~21                                                    ; regout           ;
+; |part4|RAM:R2|ram~61                                                    ; |part4|RAM:R2|ram~61                                                    ; out              ;
+; |part4|RAM:R2|ram~22                                                    ; |part4|RAM:R2|ram~22                                                    ; regout           ;
+; |part4|RAM:R2|ram~62                                                    ; |part4|RAM:R2|ram~62                                                    ; out              ;
+; |part4|RAM:R2|ram~23                                                    ; |part4|RAM:R2|ram~23                                                    ; regout           ;
+; |part4|RAM:R2|ram~63                                                    ; |part4|RAM:R2|ram~63                                                    ; out              ;
+; |part4|RAM:R2|ram~25                                                    ; |part4|RAM:R2|ram~25                                                    ; regout           ;
+; |part4|RAM:R2|ram~65                                                    ; |part4|RAM:R2|ram~65                                                    ; out              ;
+; |part4|RAM:R2|ram~28                                                    ; |part4|RAM:R2|ram~28                                                    ; regout           ;
+; |part4|RAM:R2|ram~30                                                    ; |part4|RAM:R2|ram~30                                                    ; regout           ;
+; |part4|RAM:R2|ram~70                                                    ; |part4|RAM:R2|ram~70                                                    ; out              ;
+; |part4|RAM:R2|ram~31                                                    ; |part4|RAM:R2|ram~31                                                    ; regout           ;
+; |part4|RAM:R2|ram~71                                                    ; |part4|RAM:R2|ram~71                                                    ; out              ;
+; |part4|RAM:R2|ram~32                                                    ; |part4|RAM:R2|ram~32                                                    ; regout           ;
+; |part4|RAM:R2|ram~38                                                    ; |part4|RAM:R2|ram~38                                                    ; regout           ;
+; |part4|RAM:R2|ram~78                                                    ; |part4|RAM:R2|ram~78                                                    ; out              ;
+; |part4|RAM:R2|ram~39                                                    ; |part4|RAM:R2|ram~39                                                    ; regout           ;
+; |part4|RAM:R2|ram~79                                                    ; |part4|RAM:R2|ram~79                                                    ; out              ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_4|mux_umc:auto_generated|_~0              ; |part4|RAM:R2|lpm_mux:ram_rtl_4|mux_umc:auto_generated|_~0              ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_4|mux_umc:auto_generated|result_node[0]~0 ; |part4|RAM:R2|lpm_mux:ram_rtl_4|mux_umc:auto_generated|result_node[0]~0 ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_3|mux_umc:auto_generated|_~0              ; |part4|RAM:R2|lpm_mux:ram_rtl_3|mux_umc:auto_generated|_~0              ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_3|mux_umc:auto_generated|_~2              ; |part4|RAM:R2|lpm_mux:ram_rtl_3|mux_umc:auto_generated|_~2              ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_3|mux_umc:auto_generated|_~4              ; |part4|RAM:R2|lpm_mux:ram_rtl_3|mux_umc:auto_generated|_~4              ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_3|mux_umc:auto_generated|result_node[0]~0 ; |part4|RAM:R2|lpm_mux:ram_rtl_3|mux_umc:auto_generated|result_node[0]~0 ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_3|mux_umc:auto_generated|_~10             ; |part4|RAM:R2|lpm_mux:ram_rtl_3|mux_umc:auto_generated|_~10             ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_3|mux_umc:auto_generated|_~12             ; |part4|RAM:R2|lpm_mux:ram_rtl_3|mux_umc:auto_generated|_~12             ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_3|mux_umc:auto_generated|result_node[0]~1 ; |part4|RAM:R2|lpm_mux:ram_rtl_3|mux_umc:auto_generated|result_node[0]~1 ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_3|mux_umc:auto_generated|result_node[0]   ; |part4|RAM:R2|lpm_mux:ram_rtl_3|mux_umc:auto_generated|result_node[0]   ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_2|mux_umc:auto_generated|_~0              ; |part4|RAM:R2|lpm_mux:ram_rtl_2|mux_umc:auto_generated|_~0              ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_2|mux_umc:auto_generated|_~2              ; |part4|RAM:R2|lpm_mux:ram_rtl_2|mux_umc:auto_generated|_~2              ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_2|mux_umc:auto_generated|_~4              ; |part4|RAM:R2|lpm_mux:ram_rtl_2|mux_umc:auto_generated|_~4              ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_2|mux_umc:auto_generated|result_node[0]~0 ; |part4|RAM:R2|lpm_mux:ram_rtl_2|mux_umc:auto_generated|result_node[0]~0 ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_2|mux_umc:auto_generated|_~10             ; |part4|RAM:R2|lpm_mux:ram_rtl_2|mux_umc:auto_generated|_~10             ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_2|mux_umc:auto_generated|_~12             ; |part4|RAM:R2|lpm_mux:ram_rtl_2|mux_umc:auto_generated|_~12             ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_2|mux_umc:auto_generated|result_node[0]~1 ; |part4|RAM:R2|lpm_mux:ram_rtl_2|mux_umc:auto_generated|result_node[0]~1 ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_2|mux_umc:auto_generated|result_node[0]   ; |part4|RAM:R2|lpm_mux:ram_rtl_2|mux_umc:auto_generated|result_node[0]   ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_0|mux_umc:auto_generated|_~0              ; |part4|RAM:R2|lpm_mux:ram_rtl_0|mux_umc:auto_generated|_~0              ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_0|mux_umc:auto_generated|result_node[0]~0 ; |part4|RAM:R2|lpm_mux:ram_rtl_0|mux_umc:auto_generated|result_node[0]~0 ; out0             ;
++-------------------------------------------------------------------------+-------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                                                             ;
++-------------------------------------------------------------------------+-------------------------------------------------------------------------+------------------+
+; Node Name                                                               ; Output Port Name                                                        ; Output Port Type ;
++-------------------------------------------------------------------------+-------------------------------------------------------------------------+------------------+
+; |part4|rst                                                              ; |part4|rst                                                              ; out              ;
+; |part4|dout[6]                                                          ; |part4|dout[6]                                                          ; pin_out          ;
+; |part4|dout[7]                                                          ; |part4|dout[7]                                                          ; pin_out          ;
+; |part4|RAM:R2|Dout[7]~reg0                                              ; |part4|RAM:R2|Dout[7]~reg0                                              ; regout           ;
+; |part4|RAM:R2|Dout[6]~reg0                                              ; |part4|RAM:R2|Dout[6]~reg0                                              ; regout           ;
+; |part4|RAM:R2|Dout[0]~en                                                ; |part4|RAM:R2|Dout[0]~en                                                ; regout           ;
+; |part4|RAM:R2|Dout[1]~en                                                ; |part4|RAM:R2|Dout[1]~en                                                ; regout           ;
+; |part4|RAM:R2|Dout[2]~en                                                ; |part4|RAM:R2|Dout[2]~en                                                ; regout           ;
+; |part4|RAM:R2|Dout[3]~en                                                ; |part4|RAM:R2|Dout[3]~en                                                ; regout           ;
+; |part4|RAM:R2|Dout[4]~en                                                ; |part4|RAM:R2|Dout[4]~en                                                ; regout           ;
+; |part4|RAM:R2|Dout[5]~en                                                ; |part4|RAM:R2|Dout[5]~en                                                ; regout           ;
+; |part4|RAM:R2|Dout[6]~en                                                ; |part4|RAM:R2|Dout[6]~en                                                ; regout           ;
+; |part4|RAM:R2|Dout[6]                                                   ; |part4|RAM:R2|Dout[6]                                                   ; out              ;
+; |part4|RAM:R2|Dout[7]~en                                                ; |part4|RAM:R2|Dout[7]~en                                                ; regout           ;
+; |part4|RAM:R2|Dout[7]                                                   ; |part4|RAM:R2|Dout[7]                                                   ; out              ;
+; |part4|ROM:R1|Dout[6]                                                   ; |part4|ROM:R1|Dout[6]                                                   ; out              ;
+; |part4|ROM:R1|Dout[7]                                                   ; |part4|ROM:R1|Dout[7]                                                   ; out              ;
+; |part4|FSM:F|PS~2                                                       ; |part4|FSM:F|PS~2                                                       ; out0             ;
+; |part4|FSM:F|PS~14                                                      ; |part4|FSM:F|PS~14                                                      ; out0             ;
+; |part4|RAM:R2|ram~12                                                    ; |part4|RAM:R2|ram~12                                                    ; regout           ;
+; |part4|RAM:R2|ram~52                                                    ; |part4|RAM:R2|ram~52                                                    ; out              ;
+; |part4|RAM:R2|ram~13                                                    ; |part4|RAM:R2|ram~13                                                    ; regout           ;
+; |part4|RAM:R2|ram~53                                                    ; |part4|RAM:R2|ram~53                                                    ; out              ;
+; |part4|RAM:R2|ram~14                                                    ; |part4|RAM:R2|ram~14                                                    ; regout           ;
+; |part4|RAM:R2|ram~54                                                    ; |part4|RAM:R2|ram~54                                                    ; out              ;
+; |part4|RAM:R2|ram~15                                                    ; |part4|RAM:R2|ram~15                                                    ; regout           ;
+; |part4|RAM:R2|ram~55                                                    ; |part4|RAM:R2|ram~55                                                    ; out              ;
+; |part4|RAM:R2|ram~16                                                    ; |part4|RAM:R2|ram~16                                                    ; regout           ;
+; |part4|RAM:R2|ram~56                                                    ; |part4|RAM:R2|ram~56                                                    ; out              ;
+; |part4|RAM:R2|ram~17                                                    ; |part4|RAM:R2|ram~17                                                    ; regout           ;
+; |part4|RAM:R2|ram~57                                                    ; |part4|RAM:R2|ram~57                                                    ; out              ;
+; |part4|RAM:R2|ram~18                                                    ; |part4|RAM:R2|ram~18                                                    ; regout           ;
+; |part4|RAM:R2|ram~58                                                    ; |part4|RAM:R2|ram~58                                                    ; out              ;
+; |part4|RAM:R2|ram~19                                                    ; |part4|RAM:R2|ram~19                                                    ; regout           ;
+; |part4|RAM:R2|ram~59                                                    ; |part4|RAM:R2|ram~59                                                    ; out              ;
+; |part4|RAM:R2|ram~20                                                    ; |part4|RAM:R2|ram~20                                                    ; regout           ;
+; |part4|RAM:R2|ram~60                                                    ; |part4|RAM:R2|ram~60                                                    ; out              ;
+; |part4|RAM:R2|ram~21                                                    ; |part4|RAM:R2|ram~21                                                    ; regout           ;
+; |part4|RAM:R2|ram~22                                                    ; |part4|RAM:R2|ram~22                                                    ; regout           ;
+; |part4|RAM:R2|ram~23                                                    ; |part4|RAM:R2|ram~23                                                    ; regout           ;
+; |part4|RAM:R2|ram~24                                                    ; |part4|RAM:R2|ram~24                                                    ; regout           ;
+; |part4|RAM:R2|ram~64                                                    ; |part4|RAM:R2|ram~64                                                    ; out              ;
+; |part4|RAM:R2|ram~25                                                    ; |part4|RAM:R2|ram~25                                                    ; regout           ;
+; |part4|RAM:R2|ram~26                                                    ; |part4|RAM:R2|ram~26                                                    ; regout           ;
+; |part4|RAM:R2|ram~66                                                    ; |part4|RAM:R2|ram~66                                                    ; out              ;
+; |part4|RAM:R2|ram~27                                                    ; |part4|RAM:R2|ram~27                                                    ; regout           ;
+; |part4|RAM:R2|ram~67                                                    ; |part4|RAM:R2|ram~67                                                    ; out              ;
+; |part4|RAM:R2|ram~28                                                    ; |part4|RAM:R2|ram~28                                                    ; regout           ;
+; |part4|RAM:R2|ram~29                                                    ; |part4|RAM:R2|ram~29                                                    ; regout           ;
+; |part4|RAM:R2|ram~69                                                    ; |part4|RAM:R2|ram~69                                                    ; out              ;
+; |part4|RAM:R2|ram~30                                                    ; |part4|RAM:R2|ram~30                                                    ; regout           ;
+; |part4|RAM:R2|ram~70                                                    ; |part4|RAM:R2|ram~70                                                    ; out              ;
+; |part4|RAM:R2|ram~31                                                    ; |part4|RAM:R2|ram~31                                                    ; regout           ;
+; |part4|RAM:R2|ram~71                                                    ; |part4|RAM:R2|ram~71                                                    ; out              ;
+; |part4|RAM:R2|ram~32                                                    ; |part4|RAM:R2|ram~32                                                    ; regout           ;
+; |part4|RAM:R2|ram~33                                                    ; |part4|RAM:R2|ram~33                                                    ; regout           ;
+; |part4|RAM:R2|ram~73                                                    ; |part4|RAM:R2|ram~73                                                    ; out              ;
+; |part4|RAM:R2|ram~34                                                    ; |part4|RAM:R2|ram~34                                                    ; regout           ;
+; |part4|RAM:R2|ram~74                                                    ; |part4|RAM:R2|ram~74                                                    ; out              ;
+; |part4|RAM:R2|ram~35                                                    ; |part4|RAM:R2|ram~35                                                    ; regout           ;
+; |part4|RAM:R2|ram~75                                                    ; |part4|RAM:R2|ram~75                                                    ; out              ;
+; |part4|RAM:R2|ram~36                                                    ; |part4|RAM:R2|ram~36                                                    ; regout           ;
+; |part4|RAM:R2|ram~76                                                    ; |part4|RAM:R2|ram~76                                                    ; out              ;
+; |part4|RAM:R2|ram~37                                                    ; |part4|RAM:R2|ram~37                                                    ; regout           ;
+; |part4|RAM:R2|ram~77                                                    ; |part4|RAM:R2|ram~77                                                    ; out              ;
+; |part4|RAM:R2|ram~38                                                    ; |part4|RAM:R2|ram~38                                                    ; regout           ;
+; |part4|RAM:R2|ram~78                                                    ; |part4|RAM:R2|ram~78                                                    ; out              ;
+; |part4|RAM:R2|ram~39                                                    ; |part4|RAM:R2|ram~39                                                    ; regout           ;
+; |part4|RAM:R2|ram~79                                                    ; |part4|RAM:R2|ram~79                                                    ; out              ;
+; |part4|RAM:R2|ram~40                                                    ; |part4|RAM:R2|ram~40                                                    ; regout           ;
+; |part4|RAM:R2|ram~80                                                    ; |part4|RAM:R2|ram~80                                                    ; out              ;
+; |part4|RAM:R2|ram~41                                                    ; |part4|RAM:R2|ram~41                                                    ; regout           ;
+; |part4|RAM:R2|ram~81                                                    ; |part4|RAM:R2|ram~81                                                    ; out              ;
+; |part4|RAM:R2|ram~42                                                    ; |part4|RAM:R2|ram~42                                                    ; regout           ;
+; |part4|RAM:R2|ram~82                                                    ; |part4|RAM:R2|ram~82                                                    ; out              ;
+; |part4|RAM:R2|ram~43                                                    ; |part4|RAM:R2|ram~43                                                    ; regout           ;
+; |part4|RAM:R2|ram~83                                                    ; |part4|RAM:R2|ram~83                                                    ; out              ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_7|mux_umc:auto_generated|_~17             ; |part4|RAM:R2|lpm_mux:ram_rtl_7|mux_umc:auto_generated|_~17             ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_6|mux_umc:auto_generated|_~17             ; |part4|RAM:R2|lpm_mux:ram_rtl_6|mux_umc:auto_generated|_~17             ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_5|mux_umc:auto_generated|_~17             ; |part4|RAM:R2|lpm_mux:ram_rtl_5|mux_umc:auto_generated|_~17             ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_4|mux_umc:auto_generated|_~0              ; |part4|RAM:R2|lpm_mux:ram_rtl_4|mux_umc:auto_generated|_~0              ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_4|mux_umc:auto_generated|result_node[0]~0 ; |part4|RAM:R2|lpm_mux:ram_rtl_4|mux_umc:auto_generated|result_node[0]~0 ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_4|mux_umc:auto_generated|_~17             ; |part4|RAM:R2|lpm_mux:ram_rtl_4|mux_umc:auto_generated|_~17             ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_3|mux_umc:auto_generated|_~0              ; |part4|RAM:R2|lpm_mux:ram_rtl_3|mux_umc:auto_generated|_~0              ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_3|mux_umc:auto_generated|_~2              ; |part4|RAM:R2|lpm_mux:ram_rtl_3|mux_umc:auto_generated|_~2              ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_3|mux_umc:auto_generated|_~4              ; |part4|RAM:R2|lpm_mux:ram_rtl_3|mux_umc:auto_generated|_~4              ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_3|mux_umc:auto_generated|result_node[0]~0 ; |part4|RAM:R2|lpm_mux:ram_rtl_3|mux_umc:auto_generated|result_node[0]~0 ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_3|mux_umc:auto_generated|_~10             ; |part4|RAM:R2|lpm_mux:ram_rtl_3|mux_umc:auto_generated|_~10             ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_3|mux_umc:auto_generated|_~12             ; |part4|RAM:R2|lpm_mux:ram_rtl_3|mux_umc:auto_generated|_~12             ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_3|mux_umc:auto_generated|_~17             ; |part4|RAM:R2|lpm_mux:ram_rtl_3|mux_umc:auto_generated|_~17             ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_2|mux_umc:auto_generated|_~0              ; |part4|RAM:R2|lpm_mux:ram_rtl_2|mux_umc:auto_generated|_~0              ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_2|mux_umc:auto_generated|_~2              ; |part4|RAM:R2|lpm_mux:ram_rtl_2|mux_umc:auto_generated|_~2              ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_2|mux_umc:auto_generated|_~4              ; |part4|RAM:R2|lpm_mux:ram_rtl_2|mux_umc:auto_generated|_~4              ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_2|mux_umc:auto_generated|result_node[0]~0 ; |part4|RAM:R2|lpm_mux:ram_rtl_2|mux_umc:auto_generated|result_node[0]~0 ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_2|mux_umc:auto_generated|_~10             ; |part4|RAM:R2|lpm_mux:ram_rtl_2|mux_umc:auto_generated|_~10             ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_2|mux_umc:auto_generated|_~12             ; |part4|RAM:R2|lpm_mux:ram_rtl_2|mux_umc:auto_generated|_~12             ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_2|mux_umc:auto_generated|_~17             ; |part4|RAM:R2|lpm_mux:ram_rtl_2|mux_umc:auto_generated|_~17             ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_1|mux_umc:auto_generated|_~17             ; |part4|RAM:R2|lpm_mux:ram_rtl_1|mux_umc:auto_generated|_~17             ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_0|mux_umc:auto_generated|_~0              ; |part4|RAM:R2|lpm_mux:ram_rtl_0|mux_umc:auto_generated|_~0              ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_0|mux_umc:auto_generated|result_node[0]~0 ; |part4|RAM:R2|lpm_mux:ram_rtl_0|mux_umc:auto_generated|result_node[0]~0 ; out0             ;
+; |part4|RAM:R2|lpm_mux:ram_rtl_0|mux_umc:auto_generated|_~17             ; |part4|RAM:R2|lpm_mux:ram_rtl_0|mux_umc:auto_generated|_~17             ; out0             ;
++-------------------------------------------------------------------------+-------------------------------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+    Info: Processing started: Sun Feb 09 16:43:47 2020
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off part4 -c part4
+Info: Using vector source file "C:/Users/user/Digital Quartus/M01/Lab4/part4a/part4.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      61.76 %
+Info: Number of transitions in simulation is 2934
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 148 megabytes
+    Info: Processing ended: Sun Feb 09 16:43:48 2020
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+

@@ -1,0 +1,379 @@
+Simulator report for part6a
+Sat Feb 01 14:44:42 2020
+Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 120 nodes    ;
+; Simulation Coverage         ;      48.28 % ;
+; Total Number of Transitions ; 7283         ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
+; Device                      ; EP2C35F672C6 ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Timing     ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      48.28 % ;
+; Total nodes checked                                 ; 120          ;
+; Total output ports checked                          ; 145          ;
+; Total output ports with complete 1/0-value coverage ; 70           ;
+; Total output ports with no 1/0-value coverage       ; 73           ;
+; Total output ports with no 1-value coverage         ; 75           ;
+; Total output ports with no 0-value coverage         ; 73           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++----------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                ;
++----------------------------+----------------------------+------------------+
+; Node Name                  ; Output Port Name           ; Output Port Type ;
++----------------------------+----------------------------+------------------+
+; |part6a|Add0~0             ; |part6a|Add0~0             ; combout          ;
+; |part6a|Add0~0             ; |part6a|Add0~1             ; cout             ;
+; |part6a|Add0~2             ; |part6a|Add0~2             ; combout          ;
+; |part6a|Add0~2             ; |part6a|Add0~3             ; cout             ;
+; |part6a|Add0~4             ; |part6a|Add0~4             ; combout          ;
+; |part6a|Add0~4             ; |part6a|Add0~5             ; cout             ;
+; |part6a|Add0~6             ; |part6a|Add0~6             ; combout          ;
+; |part6a|Add0~6             ; |part6a|Add0~7             ; cout             ;
+; |part6a|Add0~8             ; |part6a|Add0~8             ; combout          ;
+; |part6a|Add0~8             ; |part6a|Add0~9             ; cout             ;
+; |part6a|Add0~10            ; |part6a|Add0~10            ; combout          ;
+; |part6a|Add0~10            ; |part6a|Add0~11            ; cout             ;
+; |part6a|Add0~12            ; |part6a|Add0~12            ; combout          ;
+; |part6a|Add0~12            ; |part6a|Add0~13            ; cout             ;
+; |part6a|Add0~14            ; |part6a|Add0~14            ; combout          ;
+; |part6a|lights[0]~reg0     ; |part6a|lights[0]~reg0     ; regout           ;
+; |part6a|lights[1]~reg0     ; |part6a|lights[1]~reg0     ; regout           ;
+; |part6a|lights[2]~reg0     ; |part6a|lights[2]~reg0     ; regout           ;
+; |part6a|lights[3]~reg0     ; |part6a|lights[3]~reg0     ; regout           ;
+; |part6a|lights[4]~reg0     ; |part6a|lights[4]~reg0     ; regout           ;
+; |part6a|lights[5]~reg0     ; |part6a|lights[5]~reg0     ; regout           ;
+; |part6a|addr[0]            ; |part6a|addr[0]            ; regout           ;
+; |part6a|addr[1]            ; |part6a|addr[1]            ; regout           ;
+; |part6a|addr[2]            ; |part6a|addr[2]            ; regout           ;
+; |part6a|addr[3]            ; |part6a|addr[3]            ; regout           ;
+; |part6a|my_rom~0           ; |part6a|my_rom~0           ; combout          ;
+; |part6a|lights~0           ; |part6a|lights~0           ; combout          ;
+; |part6a|counter[1]         ; |part6a|counter[1]         ; regout           ;
+; |part6a|my_rom~1           ; |part6a|my_rom~1           ; combout          ;
+; |part6a|lights~1           ; |part6a|lights~1           ; combout          ;
+; |part6a|my_rom~2           ; |part6a|my_rom~2           ; combout          ;
+; |part6a|lights~2           ; |part6a|lights~2           ; combout          ;
+; |part6a|my_rom~3           ; |part6a|my_rom~3           ; combout          ;
+; |part6a|lights~3           ; |part6a|lights~3           ; combout          ;
+; |part6a|my_rom~4           ; |part6a|my_rom~4           ; combout          ;
+; |part6a|lights~4           ; |part6a|lights~4           ; combout          ;
+; |part6a|my_rom~5           ; |part6a|my_rom~5           ; combout          ;
+; |part6a|lights~5           ; |part6a|lights~5           ; combout          ;
+; |part6a|addr[0]~0          ; |part6a|addr[0]~0          ; combout          ;
+; |part6a|addr[0]~1          ; |part6a|addr[0]~1          ; combout          ;
+; |part6a|addr~2             ; |part6a|addr~2             ; combout          ;
+; |part6a|addr[0]~3          ; |part6a|addr[0]~3          ; combout          ;
+; |part6a|addr~4             ; |part6a|addr~4             ; combout          ;
+; |part6a|Add1~0             ; |part6a|Add1~0             ; combout          ;
+; |part6a|addr~5             ; |part6a|addr~5             ; combout          ;
+; |part6a|addr~6             ; |part6a|addr~6             ; combout          ;
+; |part6a|addr~7             ; |part6a|addr~7             ; combout          ;
+; |part6a|addr~8             ; |part6a|addr~8             ; combout          ;
+; |part6a|counter[0]         ; |part6a|counter[0]         ; regout           ;
+; |part6a|counter[6]         ; |part6a|counter[6]         ; regout           ;
+; |part6a|counter[5]         ; |part6a|counter[5]         ; regout           ;
+; |part6a|counter[4]         ; |part6a|counter[4]         ; regout           ;
+; |part6a|counter[3]         ; |part6a|counter[3]         ; regout           ;
+; |part6a|counter[2]         ; |part6a|counter[2]         ; regout           ;
+; |part6a|Equal0~6           ; |part6a|Equal0~6           ; combout          ;
+; |part6a|Equal0~7           ; |part6a|Equal0~7           ; combout          ;
+; |part6a|counter~0          ; |part6a|counter~0          ; combout          ;
+; |part6a|counter~12         ; |part6a|counter~12         ; combout          ;
+; |part6a|lights[0]          ; |part6a|lights[0]          ; padio            ;
+; |part6a|lights[1]          ; |part6a|lights[1]          ; padio            ;
+; |part6a|lights[2]          ; |part6a|lights[2]          ; padio            ;
+; |part6a|lights[3]          ; |part6a|lights[3]          ; padio            ;
+; |part6a|lights[4]          ; |part6a|lights[4]          ; padio            ;
+; |part6a|lights[5]          ; |part6a|lights[5]          ; padio            ;
+; |part6a|LT                 ; |part6a|LT~corein          ; combout          ;
+; |part6a|RT                 ; |part6a|RT~corein          ; combout          ;
+; |part6a|Haz                ; |part6a|Haz~corein         ; combout          ;
+; |part6a|clk                ; |part6a|clk~corein         ; combout          ;
+; |part6a|clk~clkctrl        ; |part6a|clk~clkctrl        ; outclk           ;
+; |part6a|counter[1]~clkctrl ; |part6a|counter[1]~clkctrl ; outclk           ;
++----------------------------+----------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++--------------------------------------------------------------+
+; Missing 1-Value Coverage                                     ;
++---------------------+---------------------+------------------+
+; Node Name           ; Output Port Name    ; Output Port Type ;
++---------------------+---------------------+------------------+
+; |part6a|Add0~14     ; |part6a|Add0~15     ; cout             ;
+; |part6a|Add0~16     ; |part6a|Add0~16     ; combout          ;
+; |part6a|Add0~16     ; |part6a|Add0~17     ; cout             ;
+; |part6a|Add0~18     ; |part6a|Add0~18     ; combout          ;
+; |part6a|Add0~18     ; |part6a|Add0~19     ; cout             ;
+; |part6a|Add0~20     ; |part6a|Add0~20     ; combout          ;
+; |part6a|Add0~20     ; |part6a|Add0~21     ; cout             ;
+; |part6a|Add0~22     ; |part6a|Add0~22     ; combout          ;
+; |part6a|Add0~22     ; |part6a|Add0~23     ; cout             ;
+; |part6a|Add0~24     ; |part6a|Add0~24     ; combout          ;
+; |part6a|Add0~24     ; |part6a|Add0~25     ; cout             ;
+; |part6a|Add0~26     ; |part6a|Add0~26     ; combout          ;
+; |part6a|Add0~26     ; |part6a|Add0~27     ; cout             ;
+; |part6a|Add0~28     ; |part6a|Add0~28     ; combout          ;
+; |part6a|Add0~28     ; |part6a|Add0~29     ; cout             ;
+; |part6a|Add0~30     ; |part6a|Add0~30     ; combout          ;
+; |part6a|Add0~30     ; |part6a|Add0~31     ; cout             ;
+; |part6a|Add0~32     ; |part6a|Add0~32     ; combout          ;
+; |part6a|Add0~32     ; |part6a|Add0~33     ; cout             ;
+; |part6a|Add0~34     ; |part6a|Add0~34     ; combout          ;
+; |part6a|Add0~34     ; |part6a|Add0~35     ; cout             ;
+; |part6a|Add0~36     ; |part6a|Add0~36     ; combout          ;
+; |part6a|Add0~36     ; |part6a|Add0~37     ; cout             ;
+; |part6a|Add0~38     ; |part6a|Add0~38     ; combout          ;
+; |part6a|Add0~38     ; |part6a|Add0~39     ; cout             ;
+; |part6a|Add0~40     ; |part6a|Add0~40     ; combout          ;
+; |part6a|Add0~40     ; |part6a|Add0~41     ; cout             ;
+; |part6a|Add0~42     ; |part6a|Add0~42     ; combout          ;
+; |part6a|Add0~42     ; |part6a|Add0~43     ; cout             ;
+; |part6a|Add0~44     ; |part6a|Add0~44     ; combout          ;
+; |part6a|Add0~44     ; |part6a|Add0~45     ; cout             ;
+; |part6a|Add0~46     ; |part6a|Add0~46     ; combout          ;
+; |part6a|Add0~46     ; |part6a|Add0~47     ; cout             ;
+; |part6a|Add0~48     ; |part6a|Add0~48     ; combout          ;
+; |part6a|Add0~48     ; |part6a|Add0~49     ; cout             ;
+; |part6a|Add0~50     ; |part6a|Add0~50     ; combout          ;
+; |part6a|counter[25] ; |part6a|counter[25] ; regout           ;
+; |part6a|counter[23] ; |part6a|counter[23] ; regout           ;
+; |part6a|counter[22] ; |part6a|counter[22] ; regout           ;
+; |part6a|counter[24] ; |part6a|counter[24] ; regout           ;
+; |part6a|Equal0~0    ; |part6a|Equal0~0    ; combout          ;
+; |part6a|counter[21] ; |part6a|counter[21] ; regout           ;
+; |part6a|counter[20] ; |part6a|counter[20] ; regout           ;
+; |part6a|counter[19] ; |part6a|counter[19] ; regout           ;
+; |part6a|counter[18] ; |part6a|counter[18] ; regout           ;
+; |part6a|Equal0~1    ; |part6a|Equal0~1    ; combout          ;
+; |part6a|counter[17] ; |part6a|counter[17] ; regout           ;
+; |part6a|counter[15] ; |part6a|counter[15] ; regout           ;
+; |part6a|counter[14] ; |part6a|counter[14] ; regout           ;
+; |part6a|counter[16] ; |part6a|counter[16] ; regout           ;
+; |part6a|Equal0~2    ; |part6a|Equal0~2    ; combout          ;
+; |part6a|counter[13] ; |part6a|counter[13] ; regout           ;
+; |part6a|counter[12] ; |part6a|counter[12] ; regout           ;
+; |part6a|counter[11] ; |part6a|counter[11] ; regout           ;
+; |part6a|counter[10] ; |part6a|counter[10] ; regout           ;
+; |part6a|Equal0~3    ; |part6a|Equal0~3    ; combout          ;
+; |part6a|Equal0~4    ; |part6a|Equal0~4    ; combout          ;
+; |part6a|counter[7]  ; |part6a|counter[7]  ; regout           ;
+; |part6a|counter[9]  ; |part6a|counter[9]  ; regout           ;
+; |part6a|counter[8]  ; |part6a|counter[8]  ; regout           ;
+; |part6a|Equal0~5    ; |part6a|Equal0~5    ; combout          ;
+; |part6a|Equal0~8    ; |part6a|Equal0~8    ; combout          ;
+; |part6a|counter~1   ; |part6a|counter~1   ; combout          ;
+; |part6a|counter~2   ; |part6a|counter~2   ; combout          ;
+; |part6a|counter~3   ; |part6a|counter~3   ; combout          ;
+; |part6a|counter~4   ; |part6a|counter~4   ; combout          ;
+; |part6a|counter~5   ; |part6a|counter~5   ; combout          ;
+; |part6a|counter~6   ; |part6a|counter~6   ; combout          ;
+; |part6a|counter~7   ; |part6a|counter~7   ; combout          ;
+; |part6a|counter~8   ; |part6a|counter~8   ; combout          ;
+; |part6a|counter~9   ; |part6a|counter~9   ; combout          ;
+; |part6a|counter~10  ; |part6a|counter~10  ; combout          ;
+; |part6a|counter~11  ; |part6a|counter~11  ; combout          ;
+; |part6a|rst         ; |part6a|rst~corein  ; combout          ;
+; |part6a|rst~clkctrl ; |part6a|rst~clkctrl ; outclk           ;
++---------------------+---------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++--------------------------------------------------------------+
+; Missing 0-Value Coverage                                     ;
++---------------------+---------------------+------------------+
+; Node Name           ; Output Port Name    ; Output Port Type ;
++---------------------+---------------------+------------------+
+; |part6a|Add0~14     ; |part6a|Add0~15     ; cout             ;
+; |part6a|Add0~16     ; |part6a|Add0~16     ; combout          ;
+; |part6a|Add0~16     ; |part6a|Add0~17     ; cout             ;
+; |part6a|Add0~18     ; |part6a|Add0~18     ; combout          ;
+; |part6a|Add0~18     ; |part6a|Add0~19     ; cout             ;
+; |part6a|Add0~20     ; |part6a|Add0~20     ; combout          ;
+; |part6a|Add0~20     ; |part6a|Add0~21     ; cout             ;
+; |part6a|Add0~22     ; |part6a|Add0~22     ; combout          ;
+; |part6a|Add0~22     ; |part6a|Add0~23     ; cout             ;
+; |part6a|Add0~24     ; |part6a|Add0~24     ; combout          ;
+; |part6a|Add0~24     ; |part6a|Add0~25     ; cout             ;
+; |part6a|Add0~26     ; |part6a|Add0~26     ; combout          ;
+; |part6a|Add0~26     ; |part6a|Add0~27     ; cout             ;
+; |part6a|Add0~28     ; |part6a|Add0~28     ; combout          ;
+; |part6a|Add0~28     ; |part6a|Add0~29     ; cout             ;
+; |part6a|Add0~30     ; |part6a|Add0~30     ; combout          ;
+; |part6a|Add0~30     ; |part6a|Add0~31     ; cout             ;
+; |part6a|Add0~32     ; |part6a|Add0~32     ; combout          ;
+; |part6a|Add0~32     ; |part6a|Add0~33     ; cout             ;
+; |part6a|Add0~34     ; |part6a|Add0~34     ; combout          ;
+; |part6a|Add0~34     ; |part6a|Add0~35     ; cout             ;
+; |part6a|Add0~36     ; |part6a|Add0~36     ; combout          ;
+; |part6a|Add0~36     ; |part6a|Add0~37     ; cout             ;
+; |part6a|Add0~38     ; |part6a|Add0~38     ; combout          ;
+; |part6a|Add0~38     ; |part6a|Add0~39     ; cout             ;
+; |part6a|Add0~40     ; |part6a|Add0~40     ; combout          ;
+; |part6a|Add0~40     ; |part6a|Add0~41     ; cout             ;
+; |part6a|Add0~42     ; |part6a|Add0~42     ; combout          ;
+; |part6a|Add0~42     ; |part6a|Add0~43     ; cout             ;
+; |part6a|Add0~44     ; |part6a|Add0~44     ; combout          ;
+; |part6a|Add0~44     ; |part6a|Add0~45     ; cout             ;
+; |part6a|Add0~46     ; |part6a|Add0~46     ; combout          ;
+; |part6a|Add0~46     ; |part6a|Add0~47     ; cout             ;
+; |part6a|Add0~48     ; |part6a|Add0~48     ; combout          ;
+; |part6a|Add0~48     ; |part6a|Add0~49     ; cout             ;
+; |part6a|Add0~50     ; |part6a|Add0~50     ; combout          ;
+; |part6a|counter[25] ; |part6a|counter[25] ; regout           ;
+; |part6a|counter[23] ; |part6a|counter[23] ; regout           ;
+; |part6a|counter[22] ; |part6a|counter[22] ; regout           ;
+; |part6a|counter[24] ; |part6a|counter[24] ; regout           ;
+; |part6a|Equal0~0    ; |part6a|Equal0~0    ; combout          ;
+; |part6a|counter[21] ; |part6a|counter[21] ; regout           ;
+; |part6a|counter[20] ; |part6a|counter[20] ; regout           ;
+; |part6a|counter[19] ; |part6a|counter[19] ; regout           ;
+; |part6a|counter[18] ; |part6a|counter[18] ; regout           ;
+; |part6a|Equal0~1    ; |part6a|Equal0~1    ; combout          ;
+; |part6a|counter[17] ; |part6a|counter[17] ; regout           ;
+; |part6a|counter[15] ; |part6a|counter[15] ; regout           ;
+; |part6a|counter[14] ; |part6a|counter[14] ; regout           ;
+; |part6a|counter[16] ; |part6a|counter[16] ; regout           ;
+; |part6a|Equal0~2    ; |part6a|Equal0~2    ; combout          ;
+; |part6a|counter[13] ; |part6a|counter[13] ; regout           ;
+; |part6a|counter[12] ; |part6a|counter[12] ; regout           ;
+; |part6a|counter[11] ; |part6a|counter[11] ; regout           ;
+; |part6a|counter[10] ; |part6a|counter[10] ; regout           ;
+; |part6a|Equal0~3    ; |part6a|Equal0~3    ; combout          ;
+; |part6a|Equal0~4    ; |part6a|Equal0~4    ; combout          ;
+; |part6a|counter[7]  ; |part6a|counter[7]  ; regout           ;
+; |part6a|counter[9]  ; |part6a|counter[9]  ; regout           ;
+; |part6a|counter[8]  ; |part6a|counter[8]  ; regout           ;
+; |part6a|Equal0~5    ; |part6a|Equal0~5    ; combout          ;
+; |part6a|Equal0~8    ; |part6a|Equal0~8    ; combout          ;
+; |part6a|counter~1   ; |part6a|counter~1   ; combout          ;
+; |part6a|counter~2   ; |part6a|counter~2   ; combout          ;
+; |part6a|counter~3   ; |part6a|counter~3   ; combout          ;
+; |part6a|counter~4   ; |part6a|counter~4   ; combout          ;
+; |part6a|counter~5   ; |part6a|counter~5   ; combout          ;
+; |part6a|counter~6   ; |part6a|counter~6   ; combout          ;
+; |part6a|counter~7   ; |part6a|counter~7   ; combout          ;
+; |part6a|counter~8   ; |part6a|counter~8   ; combout          ;
+; |part6a|counter~9   ; |part6a|counter~9   ; combout          ;
+; |part6a|counter~10  ; |part6a|counter~10  ; combout          ;
+; |part6a|counter~11  ; |part6a|counter~11  ; combout          ;
++---------------------+---------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+    Info: Processing started: Sat Feb 01 14:44:41 2020
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off part6a -c part6a
+Info: Using vector source file "C:/Users/user/Digital Quartus/M01/Lab3/part6a/part6a.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      48.28 %
+Info: Number of transitions in simulation is 7283
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 154 megabytes
+    Info: Processing ended: Sat Feb 01 14:44:42 2020
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+

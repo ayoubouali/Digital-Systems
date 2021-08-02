@@ -1,0 +1,482 @@
+<kpt_db name="part2.map_bb" kpt_version="1.1">
+  <key_points_set type="reference" hier_sep="/">
+    <key_point id="1" type="register">
+      <name>ps[0]</name>
+    </key_point>
+    <key_point id="2" type="register">
+      <name>ps[2]</name>
+    </key_point>
+    <key_point id="3" type="register">
+      <name>ps[1]</name>
+    </key_point>
+    <key_point id="4" type="register">
+      <name>ps[3]</name>
+    </key_point>
+  </key_points_set>
+  <key_points_set type="transition" hier_sep="|">
+    <key_point id="5" type="register">
+      <name>ps.s5</name>
+      <attributes_list>
+        <attribute name="_KPT_INT_KPSET_">S</attribute>
+      </attributes_list>
+    </key_point>
+    <key_point id="6" type="register">
+      <name>ps.s0</name>
+      <attributes_list>
+        <attribute name="_KPT_INT_KPSET_">S</attribute>
+      </attributes_list>
+    </key_point>
+    <key_point id="7" type="register">
+      <name>ps.s40</name>
+      <attributes_list>
+        <attribute name="_KPT_INT_KPSET_">S</attribute>
+      </attributes_list>
+    </key_point>
+    <key_point id="8" type="register">
+      <name>ps.s20</name>
+      <attributes_list>
+        <attribute name="_KPT_INT_KPSET_">S</attribute>
+      </attributes_list>
+    </key_point>
+    <key_point id="9" type="register">
+      <name>ps.s45</name>
+      <attributes_list>
+        <attribute name="_KPT_INT_KPSET_">S</attribute>
+      </attributes_list>
+    </key_point>
+    <key_point id="10" type="register">
+      <name>ps.s25</name>
+      <attributes_list>
+        <attribute name="_KPT_INT_KPSET_">S</attribute>
+      </attributes_list>
+    </key_point>
+    <key_point id="11" type="register">
+      <name>ps.s30</name>
+      <attributes_list>
+        <attribute name="_KPT_INT_KPSET_">S</attribute>
+      </attributes_list>
+    </key_point>
+    <key_point id="12" type="register">
+      <name>ps.s35</name>
+      <attributes_list>
+        <attribute name="_KPT_INT_KPSET_">S</attribute>
+      </attributes_list>
+    </key_point>
+    <key_point id="13" type="register">
+      <name>ps.s10</name>
+      <attributes_list>
+        <attribute name="_KPT_INT_KPSET_">S</attribute>
+      </attributes_list>
+    </key_point>
+    <key_point id="14" type="register">
+      <name>ps.s15</name>
+      <attributes_list>
+        <attribute name="_KPT_INT_KPSET_">S</attribute>
+      </attributes_list>
+    </key_point>
+  </key_points_set>
+  <key_points_set type="transformed" hier_sep="|">
+    <key_point id="15" type="register">
+      <name>ps.s5</name>
+    </key_point>
+    <key_point id="16" type="register">
+      <name>ps.s0</name>
+    </key_point>
+    <key_point id="17" type="register">
+      <name>ps.s40</name>
+    </key_point>
+    <key_point id="18" type="register">
+      <name>ps.s20</name>
+    </key_point>
+    <key_point id="19" type="register">
+      <name>ps.s45</name>
+    </key_point>
+    <key_point id="20" type="register">
+      <name>ps.s25</name>
+    </key_point>
+    <key_point id="21" type="register">
+      <name>ps.s30</name>
+    </key_point>
+    <key_point id="22" type="register">
+      <name>ps.s35</name>
+    </key_point>
+    <key_point id="23" type="register">
+      <name>ps.s10</name>
+    </key_point>
+    <key_point id="24" type="register">
+      <name>ps.s15</name>
+    </key_point>
+  </key_points_set>
+  <transformations_set hier_sep="|">
+    <transformation>
+      <kp_set type="reference">
+        <kp_state index="0">
+          <kp id="13" type="proxy">          </kp>
+        </kp_state>
+      </kp_set>
+      <kp_set type="transformed">
+        <kp_state index="0">
+          <kp id="23" type="proxy">          </kp>
+        </kp_state>
+      </kp_set>
+    </transformation>
+    <transformation>
+      <kp_set type="reference">
+        <kp_state index="0">
+          <kp id="14" type="proxy">          </kp>
+        </kp_state>
+      </kp_set>
+      <kp_set type="transformed">
+        <kp_state index="0">
+          <kp id="24" type="proxy">          </kp>
+        </kp_state>
+      </kp_set>
+    </transformation>
+    <transformation>
+      <kp_set type="reference">
+        <kp_state index="0">
+          <kp id="8" type="proxy">          </kp>
+        </kp_state>
+      </kp_set>
+      <kp_set type="transformed">
+        <kp_state index="0">
+          <kp id="18" type="proxy">          </kp>
+        </kp_state>
+      </kp_set>
+    </transformation>
+    <transformation>
+      <kp_set type="reference">
+        <kp_state index="0">
+          <kp id="10" type="proxy">          </kp>
+        </kp_state>
+      </kp_set>
+      <kp_set type="transformed">
+        <kp_state index="0">
+          <kp id="20" type="proxy">          </kp>
+        </kp_state>
+      </kp_set>
+    </transformation>
+    <transformation>
+      <kp_set type="reference">
+        <kp_state index="0">
+          <kp id="11" type="proxy">          </kp>
+        </kp_state>
+      </kp_set>
+      <kp_set type="transformed">
+        <kp_state index="0">
+          <kp id="21" type="proxy">          </kp>
+        </kp_state>
+      </kp_set>
+    </transformation>
+    <transformation>
+      <kp_set type="reference">
+        <kp_state index="0">
+          <kp id="12" type="proxy">          </kp>
+        </kp_state>
+      </kp_set>
+      <kp_set type="transformed">
+        <kp_state index="0">
+          <kp id="22" type="proxy">          </kp>
+        </kp_state>
+      </kp_set>
+    </transformation>
+    <transformation>
+      <kp_set type="reference">
+        <kp_state index="0">
+          <kp id="7" type="proxy">          </kp>
+        </kp_state>
+      </kp_set>
+      <kp_set type="transformed">
+        <kp_state index="0">
+          <kp id="17" type="proxy">          </kp>
+        </kp_state>
+      </kp_set>
+    </transformation>
+    <transformation>
+      <kp_set type="reference">
+        <kp_state index="0">
+          <kp id="9" type="proxy">          </kp>
+        </kp_state>
+      </kp_set>
+      <kp_set type="transformed">
+        <kp_state index="0">
+          <kp id="19" type="proxy">          </kp>
+        </kp_state>
+      </kp_set>
+    </transformation>
+    <transformation>
+      <kp_set type="reference">
+        <kp_state index="0">
+          <kp id="4" type="proxy">          </kp>
+        </kp_state>
+        <kp_state index="1">
+          <kp id="2" type="proxy">          </kp>
+        </kp_state>
+        <kp_state index="2">
+          <kp id="3" type="proxy">          </kp>
+        </kp_state>
+        <kp_state index="3">
+          <kp id="1" type="proxy">          </kp>
+        </kp_state>
+      </kp_set>
+      <kp_set type="transformed">
+        <kp_state index="0">
+          <kp id="9" type="proxy">          </kp>
+        </kp_state>
+        <kp_state index="1">
+          <kp id="7" type="proxy">          </kp>
+        </kp_state>
+        <kp_state index="2">
+          <kp id="12" type="proxy">          </kp>
+        </kp_state>
+        <kp_state index="3">
+          <kp id="11" type="proxy">          </kp>
+        </kp_state>
+        <kp_state index="4">
+          <kp id="10" type="proxy">          </kp>
+        </kp_state>
+        <kp_state index="5">
+          <kp id="8" type="proxy">          </kp>
+        </kp_state>
+        <kp_state index="6">
+          <kp id="14" type="proxy">          </kp>
+        </kp_state>
+        <kp_state index="7">
+          <kp id="13" type="proxy">          </kp>
+        </kp_state>
+        <kp_state index="8">
+          <kp id="5" type="proxy">          </kp>
+        </kp_state>
+        <kp_state index="9">
+          <kp id="6" type="proxy">          </kp>
+        </kp_state>
+      </kp_set>
+    <state_table type="lookup" fsm_name="ps" num_states="10" num_reference_cols="4" num_transformed_cols="10">
+      <state index="0" state_name="ps.s0">
+        <reference>
+          <value index="0">0          </value>
+          <value index="1">0          </value>
+          <value index="2">0          </value>
+          <value index="3">0          </value>
+        </reference>
+        <transformed>
+          <value index="0">0          </value>
+          <value index="1">0          </value>
+          <value index="2">0          </value>
+          <value index="3">0          </value>
+          <value index="4">0          </value>
+          <value index="5">0          </value>
+          <value index="6">0          </value>
+          <value index="7">0          </value>
+          <value index="8">0          </value>
+          <value index="9">0          </value>
+        </transformed>
+      </state>
+      <state index="1" state_name="ps.s5">
+        <reference>
+          <value index="0">0          </value>
+          <value index="1">0          </value>
+          <value index="2">0          </value>
+          <value index="3">1          </value>
+        </reference>
+        <transformed>
+          <value index="0">0          </value>
+          <value index="1">0          </value>
+          <value index="2">0          </value>
+          <value index="3">0          </value>
+          <value index="4">0          </value>
+          <value index="5">0          </value>
+          <value index="6">0          </value>
+          <value index="7">0          </value>
+          <value index="8">1          </value>
+          <value index="9">1          </value>
+        </transformed>
+      </state>
+      <state index="2" state_name="ps.s10">
+        <reference>
+          <value index="0">0          </value>
+          <value index="1">0          </value>
+          <value index="2">1          </value>
+          <value index="3">0          </value>
+        </reference>
+        <transformed>
+          <value index="0">0          </value>
+          <value index="1">0          </value>
+          <value index="2">0          </value>
+          <value index="3">0          </value>
+          <value index="4">0          </value>
+          <value index="5">0          </value>
+          <value index="6">0          </value>
+          <value index="7">1          </value>
+          <value index="8">0          </value>
+          <value index="9">1          </value>
+        </transformed>
+      </state>
+      <state index="3" state_name="ps.s15">
+        <reference>
+          <value index="0">0          </value>
+          <value index="1">0          </value>
+          <value index="2">1          </value>
+          <value index="3">1          </value>
+        </reference>
+        <transformed>
+          <value index="0">0          </value>
+          <value index="1">0          </value>
+          <value index="2">0          </value>
+          <value index="3">0          </value>
+          <value index="4">0          </value>
+          <value index="5">0          </value>
+          <value index="6">1          </value>
+          <value index="7">0          </value>
+          <value index="8">0          </value>
+          <value index="9">1          </value>
+        </transformed>
+      </state>
+      <state index="4" state_name="ps.s20">
+        <reference>
+          <value index="0">0          </value>
+          <value index="1">1          </value>
+          <value index="2">0          </value>
+          <value index="3">0          </value>
+        </reference>
+        <transformed>
+          <value index="0">0          </value>
+          <value index="1">0          </value>
+          <value index="2">0          </value>
+          <value index="3">0          </value>
+          <value index="4">0          </value>
+          <value index="5">1          </value>
+          <value index="6">0          </value>
+          <value index="7">0          </value>
+          <value index="8">0          </value>
+          <value index="9">1          </value>
+        </transformed>
+      </state>
+      <state index="5" state_name="ps.s25">
+        <reference>
+          <value index="0">0          </value>
+          <value index="1">1          </value>
+          <value index="2">0          </value>
+          <value index="3">1          </value>
+        </reference>
+        <transformed>
+          <value index="0">0          </value>
+          <value index="1">0          </value>
+          <value index="2">0          </value>
+          <value index="3">0          </value>
+          <value index="4">1          </value>
+          <value index="5">0          </value>
+          <value index="6">0          </value>
+          <value index="7">0          </value>
+          <value index="8">0          </value>
+          <value index="9">1          </value>
+        </transformed>
+      </state>
+      <state index="6" state_name="ps.s30">
+        <reference>
+          <value index="0">0          </value>
+          <value index="1">1          </value>
+          <value index="2">1          </value>
+          <value index="3">0          </value>
+        </reference>
+        <transformed>
+          <value index="0">0          </value>
+          <value index="1">0          </value>
+          <value index="2">0          </value>
+          <value index="3">1          </value>
+          <value index="4">0          </value>
+          <value index="5">0          </value>
+          <value index="6">0          </value>
+          <value index="7">0          </value>
+          <value index="8">0          </value>
+          <value index="9">1          </value>
+        </transformed>
+      </state>
+      <state index="7" state_name="ps.s35">
+        <reference>
+          <value index="0">0          </value>
+          <value index="1">1          </value>
+          <value index="2">1          </value>
+          <value index="3">1          </value>
+        </reference>
+        <transformed>
+          <value index="0">0          </value>
+          <value index="1">0          </value>
+          <value index="2">1          </value>
+          <value index="3">0          </value>
+          <value index="4">0          </value>
+          <value index="5">0          </value>
+          <value index="6">0          </value>
+          <value index="7">0          </value>
+          <value index="8">0          </value>
+          <value index="9">1          </value>
+        </transformed>
+      </state>
+      <state index="8" state_name="ps.s40">
+        <reference>
+          <value index="0">1          </value>
+          <value index="1">0          </value>
+          <value index="2">0          </value>
+          <value index="3">0          </value>
+        </reference>
+        <transformed>
+          <value index="0">0          </value>
+          <value index="1">1          </value>
+          <value index="2">0          </value>
+          <value index="3">0          </value>
+          <value index="4">0          </value>
+          <value index="5">0          </value>
+          <value index="6">0          </value>
+          <value index="7">0          </value>
+          <value index="8">0          </value>
+          <value index="9">1          </value>
+        </transformed>
+      </state>
+      <state index="9" state_name="ps.s45">
+        <reference>
+          <value index="0">1          </value>
+          <value index="1">0          </value>
+          <value index="2">0          </value>
+          <value index="3">1          </value>
+        </reference>
+        <transformed>
+          <value index="0">1          </value>
+          <value index="1">0          </value>
+          <value index="2">0          </value>
+          <value index="3">0          </value>
+          <value index="4">0          </value>
+          <value index="5">0          </value>
+          <value index="6">0          </value>
+          <value index="7">0          </value>
+          <value index="8">0          </value>
+          <value index="9">1          </value>
+        </transformed>
+      </state>
+    </state_table>
+  </transformation>
+  <transformation>
+    <kp_set type="reference">
+      <kp_state index="0">
+        <kp id="6" type="proxy">        </kp>
+      </kp_state>
+    </kp_set>
+    <kp_set type="transformed">
+      <kp_state index="0">
+        <kp id="16" type="proxy">        </kp>
+      </kp_state>
+    </kp_set>
+  </transformation>
+  <transformation>
+    <kp_set type="reference">
+      <kp_state index="0">
+        <kp id="5" type="proxy">        </kp>
+      </kp_state>
+    </kp_set>
+    <kp_set type="transformed">
+      <kp_state index="0">
+        <kp id="15" type="proxy">        </kp>
+      </kp_state>
+    </kp_set>
+  </transformation>
+</transformations_set>
+</kpt_db>

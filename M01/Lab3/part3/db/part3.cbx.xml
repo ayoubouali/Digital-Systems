@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="part3">
+		<CBX_INST_ENTRY INSTANCE_NAME="|part3|lpm_mux:ram_rtl_0" CBX_FILE_NAME="mux_ioc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|part3|lpm_mux:ram_rtl_1" CBX_FILE_NAME="mux_ioc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|part3|lpm_mux:ram_rtl_2" CBX_FILE_NAME="mux_ioc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|part3|lpm_mux:ram_rtl_3" CBX_FILE_NAME="mux_ioc.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

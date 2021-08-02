@@ -1,0 +1,9 @@
+function convert(b: in std_logic_vector(7 downto 0)) return integer is
+	variable v:integer;
+	begin
+	v:= to_integer(unsigned(b));
+		return v;
+end convert;
+
+
+r3<= convert(byte);

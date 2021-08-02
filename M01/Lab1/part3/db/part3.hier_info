@@ -1,0 +1,13 @@
+|part3
+clk => ps~4.IN1
+rst => ps~5.IN1
+w => ps~2.DATAB
+w => ps~0.DATAB
+w => ps~3.DATAB
+w => ps~1.DATAB
+w => Selector0.IN1
+w => Selector1.IN2
+w => Selector1.IN3
+y <= y~0.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,15 @@
+
+State Machine - |part5|ps
+Name ps.fa ps.f ps.ef ps.e ps.de ps.d ps.cd ps.c ps.bc ps.b ps.ab ps.a 
+ps.a 0 0 0 0 0 0 0 0 0 0 0 0 
+ps.ab 0 0 0 0 0 0 0 0 0 0 1 1 
+ps.b 0 0 0 0 0 0 0 0 0 1 0 1 
+ps.bc 0 0 0 0 0 0 0 0 1 0 0 1 
+ps.c 0 0 0 0 0 0 0 1 0 0 0 1 
+ps.cd 0 0 0 0 0 0 1 0 0 0 0 1 
+ps.d 0 0 0 0 0 1 0 0 0 0 0 1 
+ps.de 0 0 0 0 1 0 0 0 0 0 0 1 
+ps.e 0 0 0 1 0 0 0 0 0 0 0 1 
+ps.ef 0 0 1 0 0 0 0 0 0 0 0 1 
+ps.f 0 1 0 0 0 0 0 0 0 0 0 1 
+ps.fa 1 0 0 0 0 0 0 0 0 0 0 1 

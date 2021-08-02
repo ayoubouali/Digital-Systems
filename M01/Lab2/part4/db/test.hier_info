@@ -1,0 +1,44 @@
+|test
+clk => counter1[0].CLK
+clk => counter1[1].CLK
+clk => counter1[2].CLK
+clk => counter1[3].CLK
+clk => counter1[4].CLK
+clk => counter1[5].CLK
+clk => counter1[6].CLK
+clk => counter1[7].CLK
+clk => counter1[8].CLK
+clk => counter1[9].CLK
+clk => counter1[10].CLK
+clk => counter1[11].CLK
+clk => counter1[12].CLK
+clk => counter1[13].CLK
+clk => counter1[14].CLK
+clk => counter1[15].CLK
+clk => counter1[16].CLK
+clk => counter1[17].CLK
+clk => counter1[18].CLK
+clk => counter1[19].CLK
+clk => counter1[20].CLK
+clk => counter1[21].CLK
+clk => counter1[22].CLK
+clk => counter1[23].CLK
+clk => counter1[24].CLK
+clk => counter1[25].CLK
+rst => counter2[2]~0.IN1
+rst => counter1[25]~0.IN1
+rst => ps~11.DATAIN
+rst => EW[0]~reg0.ENA
+rst => NS[2]~reg0.ENA
+rst => NS[1]~reg0.ENA
+rst => NS[0]~reg0.ENA
+rst => EW[2]~reg0.ENA
+rst => EW[1]~reg0.ENA
+NS[0] <= NS[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+NS[1] <= NS[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+NS[2] <= NS[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+EW[0] <= EW[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+EW[1] <= EW[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+EW[2] <= EW[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
